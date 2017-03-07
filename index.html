@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="bose">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body ng-controller="mainCtrl">
+    <nav>
+        <div class="boseLogo"></div>
+
+    </nav>
+
+
+<button ui-sref='soundTrueOnEar'>+</button>
+<button ui-sref='soundLink'>+</button>
+<button ui-sref='quietComfort'>+</button>
+<button ui-sref='freeStyleBuds'>+</button>
+<button ui-sref='soundTrueAroundEar'>+</button>
+
+<ui-view></ui-view>
+
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js'></script>
+<script src="app.js"></script>
+<script src="mainCtrl.js"></script>
