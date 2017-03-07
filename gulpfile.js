@@ -11,7 +11,7 @@ gulp.task('concat', function(){
   .pipe(babel({
     presets: ['es2015']
   }))
-  .pipe(concat('all.js'))
+  .pipe(concat('bundle.js'))
   .pipe(gulp.dest('./dist'));
 });
 
@@ -19,21 +19,22 @@ gulp.task('concat', function(){
 // Compile scss into css files
 gulp.task('sass', function() {
   gulp.src([
-    './styles/base/reset.css', 
-    './styles/fonts/fonts.css', 
     './styles/views/*{.scss,.css}',
-    './styles/**/*.scss'
+    './styles/**/*.scss',
+    './styles/*.scss',
     ])
   .pipe(sass().on('error', sass.logError))
-  .pipe(concat('all.css'))
+  .pipe(concat('bundle.css'))
   .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('watch', function() {
+    gulp.watch('./js/**/*.js', ['concat']);
+    gulp.watch('./styles/*.{css, scss}', ['sass']);
+})
 
-gulp.task('default', ['concat', 'sass']);
+gulp.task('default', ['concat', 'sass', 'watch']);
 
 
 // Gulp watch
 // takes two arguments: the file(s) to watch, and then the task to do if it notices a change.
-gulp.watch('./js/**/*.js', ['concat']);
-gulp.watch('./styles/**/*.{css, scss}', ['sass']);
