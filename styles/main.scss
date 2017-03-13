@@ -1,8 +1,108 @@
 .boseLogo {
-    height: 100px;
-    width: 300px;
-    background-color: black;
+    height: 50px;
+    width: 125px;
+    padding-top: 30px;
+    padding-left: 85px;
+    position: fixed;
+    background-color: transparent;
+    z-index: 10;
 }
-a { 
-    cursor: pointer; 
+// a { 
+//     cursor: pointer; 
+// }
+.socialMediaContainer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
 }
+.share {
+    color: white;
+    position: fixed;
+    z-index: 10;
+}
+.buttonContainer{
+    // padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.soundTrueOnEarContainer {
+    background-color: purple;
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    transition: width .5s;
+
+    .soundTrueOnEarContainer:hover{
+        width: 800px;
+    }
+}
+.soundLinkContainer {
+    background-color: lightblue;
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+    transition: width .5s;
+
+    .soundLinkContainer:hover{
+        width: 800px;
+    }
+}
+
+.quietComfortContainer {
+    background-color: yellow;
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+    transition: width .5s;
+
+    .quietComfortContainer:hover{
+        width: 800px;
+    }
+}
+.freeStyleBudsContainer {
+    background-color: green;
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+    transition: width .5s;
+
+    .freeStyleBudsContainer:hover{
+        width: 800px;
+    }
+}
+.soundTrueAroundEarContainer {
+    background-color: teal;
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+    transition: width .5s;
+
+    .soundTrueAroundEarContainer:hover{
+        width: 800px;
+    }
+}
+button{
+    border-radius: 50%;
+}
+
+

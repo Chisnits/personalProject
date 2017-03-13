@@ -19,9 +19,10 @@ gulp.task('concat', function(){
 // Compile scss into css files
 gulp.task('sass', function() {
   gulp.src([
-    './styles/views/*{.scss,.css}',
-    './styles/**/*.scss',
-    './styles/*.scss',
+    // './styles/views/*{.scss,.css}',
+    // './styles/**/*.scss',
+    // './styles/*.scss',
+    './styles/main.scss'
     ])
   .pipe(sass().on('error', sass.logError))
   .pipe(concat('bundle.css'))
@@ -30,7 +31,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./js/**/*.js', ['concat']);
-    gulp.watch('./styles/*.{css, scss}', ['sass']);
+    gulp.watch('./styles/*.scss', ['sass']);
 })
 
 gulp.task('default', ['concat', 'sass', 'watch']);
