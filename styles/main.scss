@@ -18,15 +18,30 @@
 .share {
     color: white;
     position: fixed;
+    padding-top: 25px;
+    padding-right: 75px;
     z-index: 10;
 }
+.language {
+    color: white;
+    position: fixed;
+    padding-top: 25px;
+    padding-right: 150px;
+    z-index: 10;
+}
+// .shareIcon{
+//     color: white;
+//     position: fixed;
+//     padding-top: 25px;
+//     padding-right: 35px;
+//     z-index: 10;
+//     background-color: black;
+// }
 .buttonContainer{
-    // padding-top: 50px;
     display: flex;
     flex-direction: row;
 }
-.soundTrueOnEarContainer {
-    background-color: purple;
+.productContainerStyles {
     height: 100vh;
     width: 400px;
     display: flex;
@@ -35,74 +50,88 @@
     -webkit-transform: skew(-20deg);
     -moz-transform: skew(-20deg);
     transition: width .5s;
-
-    .soundTrueOnEarContainer:hover{
-        width: 800px;
-    }
 }
+
+.soundTrueOnEarContainer {
+    @extend .productContainerStyles;
+    background-color: purple;
+}
+
+.soundTrueOnEarContainer:hover{
+    width: 800px;
+}
+
 .soundLinkContainer {
     background-color: lightblue;
-    height: 100vh;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-transform: skew(-20deg);
-	   -moz-transform: skew(-20deg);
-    transition: width .5s;
-
-    .soundLinkContainer:hover{
-        width: 800px;
-    }
+    @extend .productContainerStyles;
+}
+.soundLinkContainer:hover{
+    width: 800px;
 }
 
 .quietComfortContainer {
     background-color: yellow;
-    height: 100vh;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-transform: skew(-20deg);
-	   -moz-transform: skew(-20deg);
-    transition: width .5s;
-
-    .quietComfortContainer:hover{
-        width: 800px;
-    }
+    @extend .productContainerStyles;
 }
+.quietComfortContainer:hover{
+    width: 800px;
+}
+
 .freeStyleBudsContainer {
     background-color: green;
-    height: 100vh;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-transform: skew(-20deg);
-	   -moz-transform: skew(-20deg);
-    transition: width .5s;
-
-    .freeStyleBudsContainer:hover{
-        width: 800px;
-    }
+    @extend .productContainerStyles;
+}
+.freeStyleBudsContainer:hover{
+    width: 800px;
 }
 .soundTrueAroundEarContainer {
     background-color: teal;
-    height: 100vh;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-transform: skew(-20deg);
-	   -moz-transform: skew(-20deg);
-    transition: width .5s;
+    @extend .productContainerStyles;
+}
 
-    .soundTrueAroundEarContainer:hover{
-        width: 800px;
-    }
+.soundTrueAroundEarContainer:hover{
+    width: 800px;
 }
 button{
     border-radius: 50%;
 }
 
+// ********************************
+// ********************************
+//          SOUNDTRUEONEAR
+// ********************************
+// ********************************
+.leftColumn{
+    height: 700px;
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navigationContainer{
+    height: 350px;
+    width: 145px;
+    display: flex;
+    // justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.rightColumn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.toggleContainer{
+    height: 350px;
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.upButton{
+
+}
 

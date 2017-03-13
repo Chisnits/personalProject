@@ -2,7 +2,7 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
 
     $stateProvider
         .state('home', {
-            url: '/home',
+            url: '/',
             templateUrl: 'views/home.html',
         })
         .state('soundTrueOnEar', {

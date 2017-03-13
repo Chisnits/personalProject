@@ -3,7 +3,7 @@
 angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('home', {
-        url: '/home',
+        url: '/',
         templateUrl: 'views/home.html'
     }).state('soundTrueOnEar', {
         url: '/soundTrueOnEar',
@@ -26,3 +26,11 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
 'use strict';
 
 angular.module('bose').controller('mainCtrl', function ($scope) {});
+'use strict';
+
+angular.module('bose').directive('headerDirective', function () {
+    return {
+        restrict: 'E',
+        templateUrl: '../views/directives/header.html'
+    };
+});
