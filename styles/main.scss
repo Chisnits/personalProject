@@ -46,7 +46,7 @@
 
 .soundTrueOnEarContainer {
     @extend .productContainerStyles;
-    background-color: purple;
+    background-color: #649;
 }
 
 .soundTrueOnEarContainer:hover{
@@ -54,7 +54,7 @@
 }
 
 .soundLinkContainer {
-    background-color: lightblue;
+    background-color: #8ce;
     @extend .productContainerStyles;
 }
 .soundLinkContainer:hover{
@@ -62,7 +62,7 @@
 }
 
 .quietComfortContainer {
-    background-color: yellow;
+    background-color: #fc2;
     @extend .productContainerStyles;
 }
 .quietComfortContainer:hover{
@@ -70,14 +70,14 @@
 }
 
 .freeStyleBudsContainer {
-    background-color: green;
+    background-color: #ac3;
     @extend .productContainerStyles;
 }
 .freeStyleBudsContainer:hover{
     width: 800px;
 }
 .soundTrueAroundEarContainer {
-    background-color: teal;
+    background-color: #3cc;
     @extend .productContainerStyles;
 }
 
@@ -99,7 +99,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: purple;
+    background-color: #664499;
 }
 
 .navigationContainer{
@@ -113,7 +113,7 @@ button{
 .centerColumn{
     height: 100vh;
     width: 60vw;
-    background-color: purple;
+    background-color: #664499;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +132,8 @@ button{
     transform: rotate(15deg);
 }
 .headphones-content {
-
+display: flex;
+align-items: center;
 }
 
 .label{
@@ -148,7 +149,7 @@ button{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: purple;
+    background-color: #664499;
     width: 25vw;
 }
 .toggleContainer{
