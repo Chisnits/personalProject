@@ -29,11 +29,6 @@
     width: 20px;
     padding:26px 20px;
 }
-.background{
-    height: 100vh;
-    width: 20vw;
-    background-color: blue;
-}
 .buttonContainer{
     display: flex;
     flex-direction: row;
@@ -49,15 +44,15 @@
     transition: width .5s;
 }
 
-
 .soundTrueOnEarContainer {
     @extend .productContainerStyles;
     background-color: #649;
-    margin-left: -250px;
+    padding-left: 200px;
+    margin-left: -200px
 }
 
 .soundTrueOnEarContainer:hover{
-    width: 900px;
+    width: 800px;
 }
 
 .soundLinkContainer {
@@ -65,17 +60,15 @@
     @extend .productContainerStyles;
 }
 .soundLinkContainer:hover{
-    width: 900px;
+    width: 800px;
 }
-.soundlinkHeadphones{
-    margin-left: -250px;
-}
+
 .quietComfortContainer {
     background-color: #fc2;
     @extend .productContainerStyles;
 }
 .quietComfortContainer:hover{
-    width: 900px;
+    width: 800px;
 }
 
 .freeStyleBudsContainer {
@@ -83,16 +76,17 @@
     @extend .productContainerStyles;
 }
 .freeStyleBudsContainer:hover{
-    width: 900px;
+    width: 800px;
 }
 .soundTrueAroundEarContainer {
     background-color: #3cc;
     @extend .productContainerStyles;
-    margin-right: -145px;
+    padding-right: 200px;
+    margin-right: -200px;
 }
 
 .soundTrueAroundEarContainer:hover{
-    width: 900px;
+    width: 800px;
 }
 button{
     border-radius: 50%;

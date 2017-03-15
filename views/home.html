@@ -1,7 +1,13 @@
 <div class="buttonContainer">
-    <div class="soundTrueOnEarContainer" >
-        <img <class="soundTrueOnEarHeadphones" src= '../assets/images/soundTrueOnEar/headphones.png' alt="">
+    <div class="soundTrueOnEarContainer" ng-mouseover="showDiv = !showDiv" ng-mouseleave="showDiv = !showDiv" ng-init="showDiv = false">
+        <img <class="soundTrueOnEarHeadphones" src= '../assets/images/soundTrueOnEar/headphones.png' style="width:100%" 100alt=""></img>
         <button ui-sref='soundTrueOnEar'>+</button>
+        <div ng-show="showDiv">
+            <h1 >SoundTrue<br>
+                on-ear headphones</h1><br>
+            <h3>Engineered for your ears.<br>
+                Designed for the rest of you.</h3>
+        </div>
     </div>
     <div class="soundLinkContainer">
         <img <class="soundLinkHeadphones" src= '../assets/images/soundLinkOnEar/soundLinkOnEarHeadphones.png' style="width: 100%" alt=""> 
