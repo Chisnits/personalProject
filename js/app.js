@@ -5,9 +5,9 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
             url: '/',
             templateUrl: 'views/home.html',
         })
-        .state('soundTrueOnEar', {
-            url: '/soundTrueOnEar',
-            templateUrl: 'views/soundTrueOnEar.html',
+        .state('soundTrueOnEarHome', {
+            url: '/soundTrueOnEarHome',
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarHome.html',
         })
         .state('soundLink', {
             url: '/soundLink',
@@ -24,6 +24,22 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
         .state('soundTrueAroundEar', {
             url: '/soundTrueAroundEar',
             templateUrl: 'views/soundTrueAroundEar.html',
+        })
+        .state('soundTrueOnEarBuyNow', {
+            url: '/soundTrueOnEarBuyNow',
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarBuyNow.html'
+        })
+        .state('soundTrueOnEarColors', {
+            url: '/soundTrueOnEarColors',
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarColors.html'
+        })
+        .state('soundTrueOnEarDimensions', {
+            url: '/soundTrueOnEarDimensions',
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarDimensions.html'
+        })
+        .state('soundTrueOnEarGallery', {
+            url: '/soundTrueOnEarGallery',
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarGallery.html'
         });
          $urlRouterProvider
             .otherwise('/');

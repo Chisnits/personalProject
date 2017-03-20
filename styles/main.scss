@@ -1,9 +1,25 @@
+@font-face {
+    font-family: 'cool-font';
+    src: url('../assets/fonts/museoSans/MuseoSansRounded-100.ttf');
+}
+p{
+    font-family: 'cool-font';
+}
+a{ 
+    color: inherit;
+} 
+.title{
+    font-size: 35px;
+}
+.content{
+    font-size: 20px;
+}
 .boseLogo {
     height: 50px;
     width: 125px;
     min-width: 125px;
     padding-top: 35px;
-    margin-right: 1000px;
+    margin-right: 1050px;
     // padding-left: calc(14vw - 57px);
     // margin-right: calc(100vh - 232.77px);
 }
@@ -59,12 +75,12 @@
     position: relative;
 }
 
-.soundTrueOnEarButton {
-    position: absolute;
-    top: 350px;
-    left: 350px;
-    z-index: 3;
-}
+// .soundTrueOnEarButton {
+//     position: absolute;
+//     top: 350px;
+//     left: 350px;
+//     z-index: 3;
+// }
 
 .soundTrueOnEarContainer:hover{
     width: 1500px;
@@ -73,7 +89,7 @@
 .soundTrueOnEarDescription{
     position: absolute;
     z-index: 3;
-    top: 650px;
+    top: 630px;
     left: 400px;
     color: white;
     white-space: nowrap
@@ -94,16 +110,16 @@
     padding-right: 420px;
     transform:scale(10);
 }
-.soundLinkButton{
-    position: absolute;
-    top: 332px;
-    left: 210px;
-    z-index: 3;
-}
+// .soundLinkButton{
+//     position: absolute;
+//     top: 332px;
+//     left: 210px;
+//     z-index: 3;
+// }
 .soundLinkDescription{
     position: absolute;
     z-index: 3;
-    top: 632px;
+    top: 630px;
     left: 190px;
     color: white;
     white-space: nowrap
@@ -122,16 +138,16 @@ transform: skew(20deg)
 .quietComfortContainer:hover{
     width: 1500px;
 }
-.quietComfortButton{
-    position: absolute;
-    top: 332px;
-    left: 210px;
-    z-index: 3;
-}
+// .quietComfortButton{
+//     position: absolute;
+//     top: 332px;
+//     left: 210px;
+//     z-index: 3;
+// }
 .quietComfortDescription{
     position: absolute;
     z-index: 3;
-    top: 665px;
+    top: 630px;
     left: 170px;
     color: white;
     white-space: nowrap
@@ -146,17 +162,17 @@ transform: skew(20deg)
     width: 1500px;
     // visibility: visible;
 }
-.freeStyleButton{
-    position: absolute;
-    top: 332px;
-    left: 210px;
-    z-index: 3;
-}
+// .freeStyleButton{
+//     position: absolute;
+//     top: 332px;
+//     left: 210px;
+//     z-index: 3;
+// }
 .freeStyleDescription{
     // visibility: hidden;
     position: absolute;
     z-index: 3;
-    top: 665px;
+    top: 630px;
     left: 170px;
     color: white;
     white-space: nowrap
@@ -173,16 +189,16 @@ transform: skew(20deg)
 .soundTrueAroundEarContainer:hover{
     width: 1500px;
 }
-.soundTrueAroundEarButton{
-    position: absolute;
-    top: 332px;
-    left: 210px;
-    z-index: 3;
-}
+// .soundTrueAroundEarButton{
+//     position: absolute;
+//     top: 332px;
+//     left: 210px;
+//     z-index: 3;
+// }
 .soundTrueAroundEarDescription{
     position: absolute;
     z-index: 3;
-    top: 665px;
+    top: 630px;
     left: 170px;
     color: white;
     white-space: nowrap
@@ -195,6 +211,7 @@ transform: skew(20deg)
     top: 275px;
     left: 315px;
     transition: all 0.3s;
+    
 }
 .soundTrueOnEarCircleButton:hover{
     transform: scale(1.3);
@@ -211,6 +228,13 @@ transform: skew(20deg)
 .circleButton:hover{
     transform: scale(1.3);
 }
+.cls-1{
+    opacity:0.4;
+    fill:#fff;
+    }
+.cls-2{
+    fill:#fff;
+    }
 button{
     border-radius: 50%;
 }
@@ -230,7 +254,7 @@ button{
 }
 
 .navigationContainer{
-    height: 350px;
+    height: 400px;
     // width: 30vw;
     display: flex;
     justify-content: space-around;
@@ -266,6 +290,13 @@ button{
     white-space: nowrap;
     flex-direction:column;
 }
+.soundTrueOnEarTitle{
+    padding-top: 1500px;
+    font-size: 50px
+}
+.soundTrueOnEarContent{
+    font-size: 25px;
+}
 .rightColumn{
     display: flex;
     justify-content: flex-end;
@@ -290,4 +321,35 @@ button{
 }
 .downButton{
     margin-right: 50px;
+}
+//***********************
+//***********************
+//***********************
+//          MENU
+//***********************
+//***********************
+//***********************
+.viewItem{
+    font-size: 50px;
+}
+.colors{
+    font-size: 50px;
+}
+.gallery{
+    font-size: 50px;
+}
+.dimensionsImg{
+    height: 50px;
+}
+.buyNow{
+    font-size: 75px;
+}
+.home{
+    font-size: 50px;
+}
+.upButton{
+    font-size: 50px;
+}
+.downButton{
+    font-size: 50px;
 }

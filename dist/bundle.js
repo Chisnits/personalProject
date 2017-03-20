@@ -5,9 +5,9 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
     $stateProvider.state('home', {
         url: '/',
         templateUrl: 'views/home.html'
-    }).state('soundTrueOnEar', {
-        url: '/soundTrueOnEar',
-        templateUrl: 'views/soundTrueOnEar.html'
+    }).state('soundTrueOnEarHome', {
+        url: '/soundTrueOnEarHome',
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarHome.html'
     }).state('soundLink', {
         url: '/soundLink',
         templateUrl: 'views/soundLink.html'
@@ -20,12 +20,41 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
     }).state('soundTrueAroundEar', {
         url: '/soundTrueAroundEar',
         templateUrl: 'views/soundTrueAroundEar.html'
+    }).state('soundTrueOnEarBuyNow', {
+        url: '/soundTrueOnEarBuyNow',
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarBuyNow.html'
+    }).state('soundTrueOnEarColors', {
+        url: '/soundTrueOnEarColors',
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarColors.html'
+    }).state('soundTrueOnEarDimensions', {
+        url: '/soundTrueOnEarDimensions',
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarDimensions.html'
+    }).state('soundTrueOnEarGallery', {
+        url: '/soundTrueOnEarGallery',
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarGallery.html'
     });
     $urlRouterProvider.otherwise('/');
 });
 'use strict';
 
 angular.module('bose').controller('mainCtrl', function ($scope) {});
+'use strict';
+
+angular.module('bose').directive('circleButtonDirective', function () {
+    return {
+        restrict: 'AE',
+        templateUrl: '../views/directives/circleButton.html',
+        scope: {
+            color: '='
+        },
+        controller: function controller($scope) {},
+        link: function link(scope, element, attribute) {
+            scope.plusColor = {
+                'fill': scope.color
+            };
+        }
+    };
+});
 'use strict';
 
 angular.module('bose').directive('headerDirective', function () {
