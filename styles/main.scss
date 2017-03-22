@@ -244,84 +244,69 @@ button{
 //          SOUNDTRUEONEAR
 // ********************************
 // ********************************
-.leftColumn{
+.columnsWrapper{
     height: 100vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(83,66,135);
+    // width: 100vw;
+    background-color: rgb(89,69,147);
+    display:flex;
 }
-
-.navigationContainer{
-    height: 400px;
-    // width: 30vw;
+.leftColumn{
+    height: 100%;
+    width: 15%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    .navigationContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 397px;
+    }
 }
 .centerColumn{
-    height: 100vh;
-    width: 60vw;
-    background-color: rgb(83,66,135);
+    height: 100%;
+    width: 70%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.headphones{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position: relative;
-    height: 1180px;
-    width: 681px;
-    margin-top: -561px;
-    margin-left: 418px;
-    background-image: url('../assets/images/soundTrueOnEar/headphones.png');
-    transform: rotate(15deg);
-}
-.description{
+    .headphones{
+        background-image: url("../../assets/images/soundTrueOnEar/headphones.png");
+        background-repeat: no-repeat;
+        width:50%;
+        height: 131vh;
+        margin-top: -400px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        transform: rotate(20deg);
+    }
+    .description{
     display: flex;
     color: white;
-    transform: rotate(-15deg);
-    padding-bottom: 162px;
+    margin-top: 955px;
+    margin-left: 115px;
+    transform: rotate(-20deg);
     white-space: nowrap;
     flex-direction:column;
+    .soundTrueOnEarTitle{
+        font-size: 300%;
+        // display: flex;
+    }
+    .tm{
+        font-size: 15%;
+        // padding-bottom: 10px;
+    }
+    .soundTrueOnEarContent{
+        font-size: 100%;
+    }    
 }
-.soundTrueOnEarTitle{
-    padding-top: 1500px;
-    font-size: 50px
-}
-.soundTrueOnEarContent{
-    font-size: 25px;
 }
 .rightColumn{
+    height: 100%;
+    width: 15%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    background-color: rgb(83,66,135);
-    width: 40vw;
-}
-.toggleContainer{
-    height: 350px;
-    width: 100%;
-    display: flex;
     justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
 }
-.columnsWrapper{
-    display: flex;
-}
-.upButton{
-    margin-right: 50px;
-    margin-bottom: 20px;
-}
-.downButton{
-    margin-right: 50px;
-}
+
 //***********************
 //***********************
 //***********************
@@ -359,17 +344,23 @@ button{
 //****************
 //****************
 .inTuneHeadphones{
-    background-repeat: no-repeat;
-    height: 1000px;
-    width: 500px;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    padding-bottom: 766px;
-    padding-left: 439px;
-    overflow: hidden;
-    background-image: url("../../assets/images/soundTrueOnEar/headphones.png")
+    height:100%;
+    width:100vw;
+    margin-left: -400px;
+    background-image: url("../../assets/images/soundTrueOnEar/inTuneHeadphoneWire.png");
+}
+.inTuneDescription{
+    height:100%;
+    color:white;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+    // font-size: 150%;
+    .inTunetitle{
+        font-size: 150%;
+    }
 }
