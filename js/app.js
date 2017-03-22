@@ -40,6 +40,14 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
         .state('soundTrueOnEarGallery', {
             url: '/soundTrueOnEarGallery',
             templateUrl: 'views/soundTrueOnEar/soundTrueOnEarGallery.html'
+        })
+        .state('soundTrueOnEarInTune', {
+            url: '/soundTrueOnEarInTune',
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarInTune.html'
+        })
+        .state('soundTrueOnEarPowerfulSound', {
+            url: '/soundTrueOnEarPowerfulSound',
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarPowerfulSound.html'
         });
          $urlRouterProvider
             .otherwise('/');

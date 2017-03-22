@@ -32,6 +32,12 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
     }).state('soundTrueOnEarGallery', {
         url: '/soundTrueOnEarGallery',
         templateUrl: 'views/soundTrueOnEar/soundTrueOnEarGallery.html'
+    }).state('soundTrueOnEarInTune', {
+        url: '/soundTrueOnEarInTune',
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarInTune.html'
+    }).state('soundTrueOnEarPowerfulSound', {
+        url: '/soundTrueOnEarPowerfulSound',
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarPowerfulSound.html'
     });
     $urlRouterProvider.otherwise('/');
 });
@@ -61,5 +67,21 @@ angular.module('bose').directive('headerDirective', function () {
     return {
         restrict: 'E',
         templateUrl: '../views/directives/header.html'
+    };
+});
+'use strict';
+
+angular.module('bose').directive('leftSideMenuDirective', function () {
+    return {
+        restrict: 'AE',
+        templateUrl: './views/directives/leftSideMenu.html'
+    };
+});
+'use strict';
+
+angular.module('bose').directive('rightSideMenuDirective', function () {
+    return {
+        restrict: 'AE',
+        templateUrl: './views/directives/rightSideMenu.html'
     };
 });

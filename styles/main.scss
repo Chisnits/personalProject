@@ -302,11 +302,11 @@ button{
     justify-content: flex-end;
     align-items: center;
     background-color: rgb(83,66,135);
-    width: 25vw;
+    width: 40vw;
 }
 .toggleContainer{
     height: 350px;
-    width: 30vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -352,4 +352,24 @@ button{
 }
 .downButton{
     font-size: 50px;
+}
+//****************
+//****************
+//      inTune
+//****************
+//****************
+.inTuneHeadphones{
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 500px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    padding-bottom: 766px;
+    padding-left: 439px;
+    overflow: hidden;
+    background-image: url("../../assets/images/soundTrueOnEar/headphones.png")
 }

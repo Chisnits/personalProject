@@ -1,25 +1,6 @@
 <div class="columnsWrapper">
     <section class="leftColumn">
-        <div class="navigationContainer">
-            <div class="viewItem">
-                <a ui-sref='soundTrueOnEarHome'><i class="fa fa-headphones" aria-hidden="true"></i></a>
-            </div>
-            <div class="colors">
-                <a ui-sref='soundTrueOnEarColors'><i class="fa fa-tint" aria-hidden="true"></i></a>
-            </div>
-            <div class="gallery">
-                <a ui-sref='soundTrueOnEarGallery'><i class="fa fa-eye" aria-hidden="true"></i></a>
-            </div>
-            <div class="dimensions">
-                <a ui-sref='soundTrueOnEarDimensions'><img class="dimensionsImg" src="../../assets/images/dimensions.png" alt=""></a>
-            </div>
-            <div class="buyNow">
-                <a ui-sref='soundTrueOnEarBuyNow'><i class="fa fa-credit-card-alt" aria-hidden="true"></i></a>
-            </div>
-            <div class="home">
-                <a ui-sref='home'><i class="fa fa-times" aria-hidden="true"></i></a>
-            </div>
-        </div>
+        <left-side-menu-directive></left-side-menu-directive>
     </section>
     <section class="centerColumn">
         <div class="headphones">
@@ -37,13 +18,6 @@
         </div>
     </section>
     <section class="rightColumn">
-        <div class="toggleContainer">
-            <div class="upButton">
-                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-            </div>
-            <div class="downButton">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </div>
-        </div>
+        <right-side-menu-directive></right-side-menu-directive>
     </section>
 </div>
