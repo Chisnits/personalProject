@@ -29,7 +29,6 @@ a{
 .boseContainer {
     width:100vw;
     display: flex;
-    background-color: transparent;
     position: fixed;
     justify-content: flex-end;
     z-index: 10;
@@ -241,7 +240,7 @@ button{
 
 // ********************************
 // ********************************
-//          SOUNDTRUEONEAR
+//         soundTrueOnEarHome
 // ********************************
 // ********************************
 .columnsWrapper{
@@ -305,6 +304,12 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
+    .toggleContainer{
+        height:200px;
+        width:50px;
+        // background-color: black;
+    }
 }
 
 //***********************
@@ -347,7 +352,7 @@ button{
     height:100%;
     width:100vw;
     margin-left: -400px;
-    background-image: url("../../assets/images/soundTrueOnEar/inTuneHeadphoneWire.png");
+    background-image: url("../../assets/images/soundTrueOnEar/inTuneHeadphonesWire.png");
 }
 .inTuneDescription{
     height:100%;
@@ -363,4 +368,29 @@ button{
     .inTunetitle{
         font-size: 150%;
     }
+}
+//*****************
+//*****************
+//   powerfulSound
+//*****************
+//*****************
+.powerfulSoundHeadphones{
+    background-image: url("../../assets/images/soundTrueOnEar/powerfulSoundHeadphones.png");
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+    margin-left: 600px;
+}
+.powerfulSoundDescription{
+    color: white;
+    white-space: nowrap;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 220px;
+    margin-left: 100px;
+}
+.powerfulSoundtitle{
+    font-size: 100%;
 }
