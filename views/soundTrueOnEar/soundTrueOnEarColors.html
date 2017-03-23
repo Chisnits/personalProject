@@ -3,9 +3,12 @@
         <left-side-menu-directive></left-side-menu-directive>
     </section>
     <section class="centerColumn">
-
+<ul>
+    <li ng-repeat="media in mediaList track by $index">
+        <img ng-src="{{media.imagePath}}"/>
+    </li>
+</ul>
     </section>
-
     <section class="rightColumn">
         <right-side-menu-directive></right-side-menu-directive>
     </section>

@@ -31,7 +31,8 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
         })
         .state('soundTrueOnEarColors', {
             url: '/soundTrueOnEarColors',
-            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarColors.html'
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarColors.html',
+            controller: 'colorPicker'
         })
         .state('soundTrueOnEarDimensions', {
             url: '/soundTrueOnEarDimensions',

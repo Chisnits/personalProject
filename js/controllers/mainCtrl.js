@@ -1,6 +1,6 @@
-angular.module('bose').controller('mainCtrl', function($scope){
+angular.module('bose').controller('mainCtrl', function ($scope){
 
 
 
     
-})
+});

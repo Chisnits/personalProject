@@ -25,7 +25,8 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
         templateUrl: 'views/soundTrueOnEar/soundTrueOnEarBuyNow.html'
     }).state('soundTrueOnEarColors', {
         url: '/soundTrueOnEarColors',
-        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarColors.html'
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarColors.html',
+        controller: 'colorPicker'
     }).state('soundTrueOnEarDimensions', {
         url: '/soundTrueOnEarDimensions',
         templateUrl: 'views/soundTrueOnEar/soundTrueOnEarDimensions.html'
@@ -40,6 +41,21 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
         templateUrl: 'views/soundTrueOnEar/soundTrueOnEarPowerfulSound.html'
     });
     $urlRouterProvider.otherwise('/');
+});
+'use strict';
+
+angular.module('bose').controller('colorPicker', function ($scope) {
+    $scope.test = 'bother';
+    function run() {
+        $scope.headphones = "differentColors";
+        var imageSource;
+        imageSource = '../../assets/images/soundTrueOnEar/colorPicker';
+
+        $scope.mediaList = [{
+            imagePath: '../../assets/images/soundTrueOnEar/colorPicker/black.png'
+        }];
+    }
+    run();
 });
 'use strict';
 
