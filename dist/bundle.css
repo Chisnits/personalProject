@@ -203,7 +203,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 397px; }
+    height: 397px;
+    align-items: center; }
 
 .centerColumn {
   height: 100%;
@@ -245,23 +246,18 @@ button {
     height: 200px;
     width: 50px; }
 
-.viewItem {
-  font-size: 50px; }
-
-.colors {
-  font-size: 50px; }
-
-.gallery {
-  font-size: 50px; }
+.iconStyle, .viewItem, .colors, .gallery, .buyNow, .home {
+  font-size: 50px;
+  color: white;
+  background-color: #534287;
+  border-radius: 50%;
+  border: solid 2px; }
 
 .dimensionsImg {
-  height: 50px; }
-
-.buyNow {
-  font-size: 75px; }
-
-.home {
-  font-size: 50px; }
+  height: 50px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%; }
 
 .upButton {
   font-size: 50px; }
@@ -310,18 +306,57 @@ button {
 
 .colorSchemeContainer {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto; }
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 450px; }
 
 .colorScheme {
-  display: flex; }
+  height: 25px;
+  border: solid 2px;
+  border-radius: 30px;
+  color: white;
+  padding: 10px; }
 
 .headphoneColor {
-  height: 500px;
-  width: 500px; }
+  height: 100%;
+  width: 650px;
+  background-repeat: no-repeat;
+  transition: background .5s ease; }
 
 .colorText {
+  display: flex;
+  justify-content: flex-end;
   color: white;
   font-size: 55px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  white-space: nowrap;
+  width: 100%;
+  height: 100px;
+  margin-top: 310px; }
+
+.galleryContainer, .leftDiv, .centerDiv, .rightDiv {
+  height: 100vh;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skew(-20deg);
+  transition: width .5s;
+  height: 100vh;
+  width: 600px; }
+
+.leftDiv:hover {
+  width: 900px; }
+
+.leftDiv {
+  background-image: url("../assets/images/soundTrueOnEar/gallery/videoStill.jpg"); }
+
+.centerDiv {
+  background-image: url("../assets/images/soundTrueOnEar/gallery/whiteWithWheel.jpg"); }
+
+.rightDiv {
+  background-image: url("../assets/images/soundTrueOnEar/gallery/purpleWithCase.jpg"); }

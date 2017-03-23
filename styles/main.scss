@@ -263,6 +263,8 @@ button{
         flex-direction: column;
         justify-content: space-between;
         height: 397px;
+        align-items: center;
+
     }
 }
 .centerColumn{
@@ -322,23 +324,35 @@ button{
 //***********************
 //***********************
 //***********************
-.viewItem{
+.iconStyle{
+    // height: 75px;
+    // width: 75px;
     font-size: 50px;
+    color: white;
+    background-color: rgb(83,66,135);
+    border-radius: 50%;
+    border: solid 2px;
+}
+.viewItem{
+    @extend .iconStyle;
 }
 .colors{
-    font-size: 50px;
+    @extend .iconStyle;
 }
 .gallery{
-    font-size: 50px;
+    @extend .iconStyle;
 }
 .dimensionsImg{
     height: 50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
 }
 .buyNow{
-    font-size: 75px;
+     @extend .iconStyle;
 }
 .home{
-    font-size: 50px;
+     @extend .iconStyle;
 }
 .upButton{
     font-size: 50px;
@@ -404,19 +418,69 @@ button{
 //*****************
 .colorSchemeContainer{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
     margin: 0 auto;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 450px;
 }
 .colorScheme{
-    display: flex;
+ height: 25px;
+ border: solid 2px;
+ border-radius: 30px;
+ color: white;
+ padding: 10px; 
 }
 .headphoneColor{
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 650px;
+    // background-image: url('../../assets/images/soundTrueOnEar/colorPicker/Black.png');
+    background-repeat: no-repeat;
+    transition: background .5s ease;
 }
 .colorText{
+    display: flex;
+    justify-content: flex-end;
     color: white;
     font-size: 55px;
     padding-bottom: 10px;
+    white-space: nowrap;
+    width: 100%;
+    height: 100px;
+    margin-top: 310px;
 }
+//*****************
+//*****************
+//   gallery
+//*****************
+//*****************
+.galleryContainer{
+    height: 100vh;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-20deg);
+    transition: width .5s;
+    height: 100vh;
+    width: 600px;
+}
+.leftDiv:hover{
+    width: 900px;
+}
+.leftDiv{
+    @extend .galleryContainer;
+    background-image: url('../assets/images/soundTrueOnEar/gallery/videoStill.jpg');
+    // @extend .galleryDiv:hover;
+}
+.centerDiv{
+     @extend .galleryContainer;
+     background-image: url('../assets/images/soundTrueOnEar/gallery/whiteWithWheel.jpg');
+}
+.rightDiv{
+     @extend .galleryContainer;
+     background-image: url('../assets/images/soundTrueOnEar/gallery/purpleWithCase.jpg');
+}
+
