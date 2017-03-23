@@ -49,12 +49,18 @@ angular.module('bose').controller('colorPicker', function ($scope) {
     function run() {
         $scope.headphones = "differentColors";
         var imageSource;
-        imageSource = '../../assets/images/soundTrueOnEar/colorPicker';
+        imageSource = '../../assets/images/soundTrueOnEar/colorPicker/';
 
         $scope.mediaList = [{
-            imagePath: '../../assets/images/soundTrueOnEar/colorPicker/black.png'
+            "ID": 1, imagePath: '../../assets/images/soundTrueOnEar/colorPicker/schemeBlack.png'
+        }, {
+            "ID": 2, imagePath: '../../assets/images/soundTrueOnEar/colorPicker/schemePurple.png'
+        }, {
+            "ID": 3, imagePath: '../../assets/images/soundTrueOnEar/colorPicker/schemeTeal.png'
+        }, {
+            "ID": 4, imagePath: '../../assets/images/soundTrueOnEar/colorPicker/schemeWhite.png'
         }];
-    }
+    };
     run();
 });
 'use strict';

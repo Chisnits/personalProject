@@ -8,6 +8,9 @@ p {
 a {
   color: inherit; }
 
+li {
+  list-style-type: none; }
+
 .title {
   font-size: 35px; }
 
@@ -304,3 +307,21 @@ button {
 
 .powerfulSoundtitle {
   font-size: 100%; }
+
+.colorSchemeContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.colorScheme {
+  display: flex; }
+
+.headphoneColor {
+  height: 500px;
+  width: 500px; }
+
+.colorText {
+  color: white;
+  font-size: 55px;
+  padding-bottom: 10px; }

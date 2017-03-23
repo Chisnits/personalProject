@@ -7,16 +7,16 @@ function run(){
 
     $scope.mediaList = [
         {
-            imagePath:'../../assets/images/soundTrueOnEar/colorPicker/black.png'
+            "ID":1, imagePath:'../../assets/images/soundTrueOnEar/colorPicker/schemeBlack.png'
         },
         {
-            imagePath:'../../assets/images/soundTrueOnEar/colorPicker/purple.png'
+            "ID":2, imagePath:'../../assets/images/soundTrueOnEar/colorPicker/schemePurple.png'
         },
         {
-            imagePath:'../../assets/images/soundTrueOnEar/colorPicker/teal.png'
+            "ID":3, imagePath:'../../assets/images/soundTrueOnEar/colorPicker/schemeTeal.png'
         },
         {
-            imagePath:'../../assets/images/soundTrueOnEar/colorPicker/white.png'
+            "ID":4, imagePath:'../../assets/images/soundTrueOnEar/colorPicker/schemeWhite.png'
         }
     ]
 };

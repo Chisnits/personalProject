@@ -3,11 +3,16 @@
         <left-side-menu-directive></left-side-menu-directive>
     </section>
     <section class="centerColumn">
-<ul>
-    <li ng-repeat="media in mediaList track by $index">
-        <img ng-src="{{media.imagePath}}"/>
-    </li>
-</ul>
+        <headphone-color class="headphoneColor"></headphone-color>
+    <div class='colorSchemeContainer'>
+            <p class="colorText">Which color <br>
+            suits you best?</p>
+        <ul class="colorSchemeContainer">
+            <li class="colorScheme"ng-repeat="media in mediaList track by $index">
+                <img ng-src="{{media.imagePath}}"/>
+            </li>
+        </ul>
+    </div>
     </section>
     <section class="rightColumn">
         <right-side-menu-directive></right-side-menu-directive>
