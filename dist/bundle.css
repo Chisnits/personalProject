@@ -373,3 +373,7 @@ button {
 
 .flickty-wrapper {
   width: 100%; }
+
+.specsImage {
+  display: flex;
+  align-items: flex-end; }
