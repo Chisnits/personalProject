@@ -1,4 +1,4 @@
-angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRouterProvider) {
+angular.module('bose', ['ui.router','bc.Flickity']).config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
         .state('home', {
@@ -49,7 +49,20 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
         .state('soundTrueOnEarPowerfulSound', {
             url: '/soundTrueOnEarPowerfulSound',
             templateUrl: 'views/soundTrueOnEar/soundTrueOnEarPowerfulSound.html'
-        });
+        })
+        .state('soundTrueOnEarGalleryVideo', {
+            url: '/soundTrueOnEarGalleryVideo',
+            templateUrl: 'views/soundTrueOnEar/gallery/galleryVideo.html'
+        })
+        .state('soundTrueOnEarGalleryCenter', {
+            url: '/soundTrueOnEarGalleryCenter',
+            templateUrl: 'views/soundTrueOnEar/gallery/galleryCenter.html',
+            controller: 'galleryCtrl'
+        })
+        .state('soundTrueOnEarGalleryRight', {
+            url: '/soundTrueOnEarGalleryRight',
+            templateUrl: 'views/soundTrueOnEar/gallery/galleryRight.html'
+        })
          $urlRouterProvider
             .otherwise('/');
 });

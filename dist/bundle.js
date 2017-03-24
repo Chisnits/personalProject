@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRouterProvider) {
+angular.module('bose', ['ui.router', 'bc.Flickity']).config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('home', {
         url: '/',
@@ -39,6 +39,16 @@ angular.module('bose', ['ui.router']).config(function ($stateProvider, $urlRoute
     }).state('soundTrueOnEarPowerfulSound', {
         url: '/soundTrueOnEarPowerfulSound',
         templateUrl: 'views/soundTrueOnEar/soundTrueOnEarPowerfulSound.html'
+    }).state('soundTrueOnEarGalleryVideo', {
+        url: '/soundTrueOnEarGalleryVideo',
+        templateUrl: 'views/soundTrueOnEar/gallery/galleryVideo.html'
+    }).state('soundTrueOnEarGalleryCenter', {
+        url: '/soundTrueOnEarGalleryCenter',
+        templateUrl: 'views/soundTrueOnEar/gallery/galleryCenter.html',
+        controller: 'galleryCtrl'
+    }).state('soundTrueOnEarGalleryRight', {
+        url: '/soundTrueOnEarGalleryRight',
+        templateUrl: 'views/soundTrueOnEar/gallery/galleryRight.html'
     });
     $urlRouterProvider.otherwise('/');
 });
@@ -68,6 +78,9 @@ angular.module('bose').controller('colorPicker', function ($scope) {
         headphonePath: '../../assets/images/soundTrueOnEar/colorPicker/white.png'
     }];
 });
+'use strict';
+
+angular.module('bose').controller('galleryCtrl', function ($scope) {});
 'use strict';
 
 angular.module('bose').controller('mainCtrl', function ($scope) {});
