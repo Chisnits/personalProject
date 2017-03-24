@@ -507,6 +507,22 @@ button{
     display:flex;
     align-items: flex-end;
 }
+.specsDescription{
+    height:300px;
+    width:300px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+}
+.specs{
+    color: white;
+    white-space: nowrap;
+}
+.carryingCaseImage{
+    height: 800px;
+    width: 900px;
+    margin: auto;
+}
 
 
 // $(document).ready(function(){

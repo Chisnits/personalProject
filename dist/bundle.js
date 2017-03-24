@@ -49,8 +49,20 @@ angular.module('bose', ['ui.router', 'bc.Flickity']).config(function ($stateProv
     }).state('soundTrueOnEarGalleryRight', {
         url: '/soundTrueOnEarGalleryRight',
         templateUrl: 'views/soundTrueOnEar/gallery/galleryRight.html'
+    }).state('soundTrueOnEarCarryingCase', {
+        url: '/soundTrueOnEarCarryingCase',
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarCarryingCase.html'
     });
     $urlRouterProvider.otherwise('/');
+});
+'use strict';
+
+$(function () {
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function () {
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
 });
 'use strict';
 

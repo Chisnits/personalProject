@@ -63,6 +63,10 @@ angular.module('bose', ['ui.router','bc.Flickity']).config(function ($stateProvi
             url: '/soundTrueOnEarGalleryRight',
             templateUrl: 'views/soundTrueOnEar/gallery/galleryRight.html'
         })
+        .state('soundTrueOnEarCarryingCase', {
+            url: '/soundTrueOnEarCarryingCase',
+            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarCarryingCase.html'
+        })
          $urlRouterProvider
             .otherwise('/');
 });
