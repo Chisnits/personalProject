@@ -80,7 +80,14 @@ angular.module('bose').controller('colorPicker', function ($scope) {
 });
 'use strict';
 
-angular.module('bose').controller('galleryCtrl', function ($scope) {});
+angular.module('bose').controller('galleryCtrl', function ($scope) {
+
+  $scope.showImage = {
+    cellSelector: '.galleryImage',
+    initialIndex: 0,
+    prevNextButtons: false
+  };
+});
 'use strict';
 
 angular.module('bose').controller('mainCtrl', function ($scope) {});
