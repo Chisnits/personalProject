@@ -57,15 +57,6 @@ angular.module('bose', ['ui.router', 'bc.Flickity']).config(function ($stateProv
 });
 'use strict';
 
-$(function () {
-  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-
-  $(window).resize(function () {
-    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-  });
-});
-'use strict';
-
 angular.module('bose').controller('colorPicker', function ($scope) {
     $scope.test = 'bother';
     $scope.background = '../../assets/images/soundTrueOnEar/colorPicker/purple.png';
@@ -103,6 +94,15 @@ angular.module('bose').controller('galleryCtrl', function ($scope) {
 'use strict';
 
 angular.module('bose').controller('mainCtrl', function ($scope) {});
+'use strict';
+
+$(function () {
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function () {
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+});
 'use strict';
 
 angular.module('bose').directive('circleButtonDirective', function () {

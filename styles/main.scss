@@ -498,6 +498,18 @@ button{
 .flickty-wrapper {
     width: 100%;
 }
+
+//*****************
+//*****************
+//   gallery video player
+//*****************
+//*****************
+.bose-video-player {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
 //*****************
 //*****************
 //   dimensions
@@ -532,6 +544,8 @@ button{
 //     $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 //   });
 // });
+
+
 
 
 
