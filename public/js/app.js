@@ -7,7 +7,7 @@ angular.module('bose', ['ui.router','bc.Flickity']).config(function ($stateProvi
         })
         .state('soundTrueOnEarHome', {
             url: '/soundTrueOnEarHome',
-            templateUrl: 'views/soundTrueOnEar/soundTrueOnEarHome.html',
+            templateUrl: './views/soundTrueOnEar/soundTrueOnEarHome.html',
         })
         .state('soundLink', {
             url: '/soundLink',
