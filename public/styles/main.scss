@@ -556,6 +556,13 @@ button{
 //   buyNow
 //*****************
 //*****************
+.centerColumnBuyNow{
+     height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .availabilityContainer{
     color: white;
     white-space: nowrap;
@@ -564,6 +571,30 @@ button{
     justify-content: center;
     height: 500px;
     width: 680px;
+}
+.colorSchemeContainerBuyNow{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    // flex-wrap: wrap;
+    height: 200px;
+    width: 450px;
+}
+.colorSchemeBuyNow{
+ height: 15px;
+ border: solid 2px;
+ border-radius: 30px;
+ color: white;
+ padding: 3px 10px; 
+}
+.buyNowTitle{
+    font-size: 350%;
+    margin-bottom: 10px;
+}
+.buyNowScheme{
+    height: 7px;
 }
 
 
@@ -576,7 +607,6 @@ button{
 //     $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 //   });
 // });
-
 
 
 

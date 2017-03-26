@@ -2,20 +2,39 @@
     <section class="leftColumn">
         <left-side-menu-directive></left-side-menu-directive>
     </section>
-    <section class="centerColumn">
+    <section class="centerColumnBuyNow">
         <div class="availabilityContainer">
-            <div class="availabilityTitle">
-                <p>Available at <br>
-                    the following stores <br>
+            <div class="buyNowContainer">
+                <p class="buyNowTitle">Available at 
+                    <br>
+                    the following stores 
+                    <br>
                 </p>
-            </div>
+            
             <div>
-                <p>Check availability by color:</p>
-                
+                <p class="buyNowContent">Check availability by color:</p>
+                <br>
+                <ul class="colorSchemeContainerBuyNow">
+                    <li class="colorSchemeBuyNow"
+                        <button><img class="buyNowScheme"src="{{colorList[0].colorPath}}" ng-click="changeBackground(0)"/></button>
+                    </li>
+                    <li class="colorSchemeBuyNow"
+                        <button><img class="buyNowScheme" src="{{colorList[1].colorPath}}" ng-click="changeBackground(1)"/></button>
+                    </li>
+                    <li class="colorSchemeBuyNow"
+                        <button><img class="buyNowScheme" src="{{colorList[2].colorPath}}" ng-click="changeBackground(2)"/></button>
+                    </li>
+                    <li class="colorSchemeBuyNow"
+                        <button><img class="buyNowScheme" src="{{colorList[3].colorPath}}" ng-click="changeBackground(3)"/></button>
+                    </li>
+                </ul>
             </div>
+                </div>
         </div> 
     </section>
     <section class="rightColumn">
         <right-side-menu-directive></right-side-menu-directive>
     </section>
 </div>
+ 
+ 

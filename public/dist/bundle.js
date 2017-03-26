@@ -7,7 +7,7 @@ angular.module('bose', ['ui.router', 'bc.Flickity']).config(function ($stateProv
         templateUrl: 'views/home.html'
     }).state('soundTrueOnEarHome', {
         url: '/soundTrueOnEarHome',
-        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarHome.html'
+        templateUrl: './views/soundTrueOnEar/soundTrueOnEarHome.html'
     }).state('soundLink', {
         url: '/soundLink',
         templateUrl: 'views/soundLink.html'
@@ -22,7 +22,8 @@ angular.module('bose', ['ui.router', 'bc.Flickity']).config(function ($stateProv
         templateUrl: 'views/soundTrueAroundEar.html'
     }).state('soundTrueOnEarBuyNow', {
         url: '/soundTrueOnEarBuyNow',
-        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarBuyNow.html'
+        templateUrl: 'views/soundTrueOnEar/soundTrueOnEarBuyNow.html',
+        controller: 'colorPicker'
     }).state('soundTrueOnEarColors', {
         url: '/soundTrueOnEarColors',
         templateUrl: 'views/soundTrueOnEar/soundTrueOnEarColors.html',
@@ -90,17 +91,21 @@ angular.module('bose').controller('galleryCtrl', function ($scope) {
     initialIndex: 0,
     prevNextButtons: false
   };
+  // $('.carousel').carousel();
 });
 'use strict';
 
 angular.module('bose').controller('mainCtrl', function ($scope) {});
 'use strict';
 
-$(function () {
-  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+angular.module('bose').controller('videoCtrl', function () {
 
-  $(window).resize(function () {
+  $(function () {
     $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+    $(window).resize(function () {
+      $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+    });
   });
 });
 'use strict';

@@ -7,12 +7,12 @@ const sass = require('gulp-sass');
 gulp.task('concat', function(){
   // gulp.src(['./js/services/mainService.js', './js/adventurerCard.js', './js/'])       Bad way
   // Use a wildcard instead. Wildcard = *
-  gulp.src(['./js/app.js', './js/**/*.js'])
+  gulp.src(['./public/js/app.js', './public/js/**/*.js'])
   .pipe(babel({
     presets: ['es2015']
   }))
   .pipe(concat('bundle.js'))
-  .pipe(gulp.dest('./dist'));
+  .pipe(gulp.dest('./public/dist'));
 });
 
 
@@ -22,16 +22,16 @@ gulp.task('sass', function() {
     // './styles/views/*{.scss,.css}',
     // './styles/**/*.scss',
     // './styles/*.scss',
-    './styles/main.scss'
+    './public/styles/main.scss'
     ])
   .pipe(sass().on('error', sass.logError))
   .pipe(concat('bundle.css'))
-  .pipe(gulp.dest('./dist'));
+  .pipe(gulp.dest('./public/dist'));
 });
 
 gulp.task('watch', function() {
-    gulp.watch('./js/**/*.js', ['concat']);
-    gulp.watch('./styles/*.scss', ['sass']);
+    gulp.watch('./public/js/**/*.js', ['concat']);
+    gulp.watch('./public/styles/*.scss', ['sass']);
 })
 
 gulp.task('default', ['concat', 'sass', 'watch']);
