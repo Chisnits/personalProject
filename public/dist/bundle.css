@@ -415,14 +415,17 @@ button {
   height: 500px;
   width: 680px; }
 
-.colorSchemeContainerBuyNow {
+.buyNowContainer {
+  margin-bottom: 40px;
+  margin-left: 300px; }
+
+.availabilityButtons {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: row;
-  margin: 0 auto;
-  height: 200px;
-  width: 450px; }
+  /* margin: 0 auto; */
+  height: 70px; }
 
 .colorSchemeBuyNow {
   height: 15px;
@@ -437,3 +440,29 @@ button {
 
 .buyNowScheme {
   height: 7px; }
+
+.stores {
+  height: 300px;
+  width: 500px;
+  display: flex; }
+
+.price {
+  margin-right: 105px; }
+
+.storesHolder {
+  height: 50px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-end; }
+
+.headphoneContainerBuyNow {
+  display: flex;
+  justify-content: flex-end; }
+
+.headphoneBuyNow {
+  height: 100%;
+  width: 280px;
+  background-repeat: no-repeat;
+  transition: background .5s ease;
+  margin-bottom: 324px;
+  margin-left: 89px; }

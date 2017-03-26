@@ -3,38 +3,47 @@
         <left-side-menu-directive></left-side-menu-directive>
     </section>
     <section class="centerColumnBuyNow">
+
         <div class="availabilityContainer">
+
             <div class="buyNowContainer">
-                <p class="buyNowTitle">Available at 
-                    <br>
-                    the following stores 
+
+
+                <p class="buyNowTitle">Available at
+                    <br> the following stores
                     <br>
                 </p>
-            
-            <div>
                 <p class="buyNowContent">Check availability by color:</p>
                 <br>
-                <ul class="colorSchemeContainerBuyNow">
-                    <li class="colorSchemeBuyNow"
-                        <button><img class="buyNowScheme"src="{{colorList[0].colorPath}}" ng-click="changeBackground(0)"/></button>
+                <ul class="availabilityButtons">
+                    <li class="colorSchemeBuyNow" <button><img class="buyNowScheme" src="{{colorList[0].colorPath}}" ng-click="changeBackground(0)" /></button>
                     </li>
-                    <li class="colorSchemeBuyNow"
-                        <button><img class="buyNowScheme" src="{{colorList[1].colorPath}}" ng-click="changeBackground(1)"/></button>
+                    <li class="colorSchemeBuyNow" <button><img class="buyNowScheme" src="{{colorList[1].colorPath}}" ng-click="changeBackground(1)" /></button>
                     </li>
-                    <li class="colorSchemeBuyNow"
-                        <button><img class="buyNowScheme" src="{{colorList[2].colorPath}}" ng-click="changeBackground(2)"/></button>
+                    <li class="colorSchemeBuyNow" <button><img class="buyNowScheme" src="{{colorList[2].colorPath}}" ng-click="changeBackground(2)" /></button>
                     </li>
-                    <li class="colorSchemeBuyNow"
-                        <button><img class="buyNowScheme" src="{{colorList[3].colorPath}}" ng-click="changeBackground(3)"/></button>
+                    <li class="colorSchemeBuyNow" <button><img class="buyNowScheme" src="{{colorList[3].colorPath}}" ng-click="changeBackground(3)" /></button>
                     </li>
                 </ul>
-            </div>
+                <div class="stores">
+                    <div>
+                        <p>Store</p>
+                    </div>
+                    <div class="storesHolder">
+                        <div class="price">
+                            <p>Price*</p>
+                        </div>
+                        <div>
+                            <p>In stock</p>
+                        </div>
+                    </div>
                 </div>
-        </div> 
-    </section>
-    <section class="rightColumn">
-        <right-side-menu-directive></right-side-menu-directive>
-    </section>
-</div>
- 
- 
+            </div>
+            <div class="headphoneContainerBuyNow">
+                <img class='headphoneBuyNow' src="{{background}}" alt="Headphone color">
+            </div>
+        </div>
+</section>
+<section class="rightColumn">
+    <right-side-menu-directive></right-side-menu-directive>
+</section>
