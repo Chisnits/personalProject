@@ -2,32 +2,29 @@
     <section class="leftColumn">
         <left-side-menu-directive></left-side-menu-directive>
     </section>
-    <section class="centerColumn">
-        <!--<headphone-color class="headphoneColor"></headphone-color>-->
-        <div class="headphoneContainer">
-            <img class='headphoneColor'src="{{background}}" alt="Headphone color">
-        </div>
-        <div class="centering">
-            <div class='colorSchemeContainer'>
-                    <p class="colorText">Which color <br>
-                        suits you best?</p>
-                <ul class="colorSchemeContainer">
-                    <li class="colorScheme"
-                        <button><img src="{{colorList[0].colorPath}}" ng-click="changeBackground(0)"/></button>
-                    </li>
-                    <li class="colorScheme"
-                        <button><img src="{{colorList[1].colorPath}}" ng-click="changeBackground(1)"/></button>
-                    </li>
-                    <li class="colorScheme"
-                        <button><img src="{{colorList[2].colorPath}}" ng-click="changeBackground(2)"/></button>
-                    </li>
-                    <li class="colorScheme"
-                        <button><img src="{{colorList[3].colorPath}}" ng-click="changeBackground(3)"/></button>
-                    </li>
-                </ul>
+    <div class="wrapper fade-in">
+        <section class="centerColumn">
+            <!--<headphone-color class="headphoneColor"></headphone-color>-->
+            <div class="headphoneContainer">
+                <img class='headphoneColor' src="{{background}}" alt="Headphone color">
             </div>
-        </div>
-    </section>
+            <div class="centering">
+                <div class='colorSchemeContainer'>
+                    <p class="colorText">Which color <br> suits you best?</p>
+                    <ul class="colorSchemeContainer">
+                        <li class="colorScheme" <button><img src="{{colorList[0].colorPath}}" ng-click="changeBackground(0)" /></button>
+                        </li>
+                        <li class="colorScheme" <button><img src="{{colorList[1].colorPath}}" ng-click="changeBackground(1)" /></button>
+                        </li>
+                        <li class="colorScheme" <button><img src="{{colorList[2].colorPath}}" ng-click="changeBackground(2)" /></button>
+                        </li>
+                        <li class="colorScheme" <button><img src="{{colorList[3].colorPath}}" ng-click="changeBackground(3)" /></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
     <section class="rightColumn">
         <right-side-menu-directive></right-side-menu-directive>
     </section>
