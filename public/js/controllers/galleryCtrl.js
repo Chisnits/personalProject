@@ -5,4 +5,5 @@ angular.module('bose').controller('galleryCtrl', function($scope) {
       initialIndex: 0,
       prevNextButtons: false,
     };
+    // $('.carousel').carousel();
 });

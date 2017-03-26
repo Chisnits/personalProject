@@ -494,10 +494,26 @@ button{
     left: 180px;
     transition: all 0.3s;
 }
-
 .flickty-wrapper {
     width: 100%;
 }
+// .flickity-slider {
+//   transform: none !important;
+// }
+
+// .galleryImage{
+//   left: 0 !important;
+//   opacity: 0;
+//   transition: opacity 0.3s ease-in-out;
+//   z-index: -1;
+// }
+
+// .galleryImage.is-selected {
+//   opacity: 1;
+//   z-index: 0
+// }
+
+
 
 //*****************
 //*****************
@@ -535,6 +551,22 @@ button{
     width: 900px;
     margin: auto;
 }
+//*****************
+//*****************
+//   buyNow
+//*****************
+//*****************
+.availabilityContainer{
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 680px;
+}
+
+
 
 
 // $(document).ready(function(){
