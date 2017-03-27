@@ -1,73 +1,86 @@
-@font-face {
+    @font-face {
     font-family: 'cool-font';
     src: url('../assets/fonts/museoSans/MuseoSansRounded-100.ttf');
 }
-p span{
+
+p span {
     font-family: 'cool-font';
 }
-a{ 
+
+a {
     color: inherit;
-} 
+}
+
 li {
     list-style-type: none;
 }
-.tm{
-        font-size: 15%;
-    }
 
-.title{
+.tm {
+    font-size: 15%;
+}
+
+.title {
     font-size: 35px;
 }
-.content{
+
+.content {
     font-size: 20px;
 }
+
 .boseLogo {
     height: 50px;
     width: 125px;
     min-width: 125px;
     padding-top: 35px;
-    margin-right: 1050px;
-    // padding-left: calc(14vw - 57px);
+    margin-right: 1050px; // padding-left: calc(14vw - 57px);
     // margin-right: calc(100vh - 232.77px);
 }
+
 // a { 
 //     cursor: pointer; 
 // }
 .boseContainer {
-    width:100vw;
+    width: 100vw;
     display: flex;
     position: fixed;
     justify-content: flex-end;
     z-index: 10;
 }
-.bosePosition{
+
+.bosePosition {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     margin-left: 10px;
 }
-.socialMediaContainer{
+
+.socialMediaContainer {
     display: flex;
     justify-content: flex-end;
 }
+
 .share {
     color: white;
-    padding:25px 20px;
+    padding: 25px 20px;
 }
+
 .language {
     color: white;
-    padding:25px 20px;
+    padding: 25px 20px;
 }
-.shareIcon{
+
+.shareIcon {
     height: 20px;
     width: 20px;
-    padding:26px 20px;
+    padding: 26px 20px;
 }
-.buttonContainer{
+
+.buttonContainer {
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
+
 .productContainerStyles {
     height: 100vh;
     width: 600px;
@@ -80,7 +93,7 @@ li {
 
 .soundTrueOnEarContainer {
     @extend .productContainerStyles;
-    background-color: rgb(83,66,135);
+    background-color: rgb(83, 66, 135);
     padding-left: 200px;
     margin-left: -200px;
     z-index: 1;
@@ -93,12 +106,11 @@ li {
 //     left: 350px;
 //     z-index: 3;
 // }
-
-.soundTrueOnEarContainer:hover{
+.soundTrueOnEarContainer:hover {
     width: 1500px;
-    
 }
-.soundTrueOnEarDescription{
+
+.soundTrueOnEarDescription {
     position: absolute;
     z-index: 3;
     top: 630px;
@@ -106,6 +118,7 @@ li {
     color: white;
     white-space: nowrap
 }
+
 .soundLinkContainer {
     background-color: #8ce;
     @extend .productContainerStyles;
@@ -114,21 +127,24 @@ li {
     z-index: 1;
     position: relative;
 }
-.soundLinkContainer:hover{
+
+.soundLinkContainer:hover {
     width: 1500px;
 }
-.soundLinkHeadphones{
+
+.soundLinkHeadphones {
     padding-bottom: 500px;
     padding-right: 500px;
-    transform:scale(10);
+    transform: scale(10);
 }
+
 // .soundLinkButton{
 //     position: absolute;
 //     top: 332px;
 //     left: 210px;
 //     z-index: 3;
 // }
-.soundLinkDescription{
+.soundLinkDescription {
     position: absolute;
     z-index: 3;
     top: 630px;
@@ -137,8 +153,8 @@ li {
     white-space: nowrap
 }
 
-.antiSkew{
-transform: skew(20deg)
+.antiSkew {
+    transform: skew(20deg)
 }
 
 .quietComfortContainer {
@@ -147,16 +163,18 @@ transform: skew(20deg)
     position: relative;
     z-index: 1;
 }
-.quietComfortContainer:hover{
+
+.quietComfortContainer:hover {
     width: 1500px;
 }
+
 // .quietComfortButton{
 //     position: absolute;
 //     top: 332px;
 //     left: 210px;
 //     z-index: 3;
 // }
-.quietComfortDescription{
+.quietComfortDescription {
     position: absolute;
     z-index: 3;
     top: 630px;
@@ -170,17 +188,18 @@ transform: skew(20deg)
     @extend .productContainerStyles;
     z-index: 1;
 }
-.freeStyleBudsContainer:hover{
-    width: 1500px;
-    // visibility: visible;
+
+.freeStyleBudsContainer:hover {
+    width: 1500px; // visibility: visible;
 }
+
 // .freeStyleButton{
 //     position: absolute;
 //     top: 332px;
 //     left: 210px;
 //     z-index: 3;
 // }
-.freeStyleDescription{
+.freeStyleDescription {
     // visibility: hidden;
     position: absolute;
     z-index: 3;
@@ -189,25 +208,26 @@ transform: skew(20deg)
     color: white;
     white-space: nowrap
 }
+
 .soundTrueAroundEarContainer {
     background-color: #3cc;
-    @extend .productContainerStyles;
-    // width: 400px;
+    @extend .productContainerStyles; // width: 400px;
     padding-right: 200px;
     margin-right: -200px;
     z-index: 1;
 }
 
-.soundTrueAroundEarContainer:hover{
+.soundTrueAroundEarContainer:hover {
     width: 1500px;
 }
+
 // .soundTrueAroundEarButton{
 //     position: absolute;
 //     top: 332px;
 //     left: 210px;
 //     z-index: 3;
 // }
-.soundTrueAroundEarDescription{
+.soundTrueAroundEarDescription {
     position: absolute;
     z-index: 3;
     top: 630px;
@@ -215,7 +235,8 @@ transform: skew(20deg)
     color: white;
     white-space: nowrap
 }
-.soundTrueOnEarCircleButton{
+
+.soundTrueOnEarCircleButton {
     z-index: 10;
     width: 250px;
     height: 300px;
@@ -223,12 +244,13 @@ transform: skew(20deg)
     top: 275px;
     left: 315px;
     transition: all 0.3s;
-    
 }
-.soundTrueOnEarCircleButton:hover{
+
+.soundTrueOnEarCircleButton:hover {
     transform: scale(1.3);
 }
-.circleButton{
+
+.circleButton {
     z-index: 10;
     width: 250px;
     height: 300px;
@@ -237,17 +259,21 @@ transform: skew(20deg)
     left: 180px;
     transition: all 0.3s;
 }
-.circleButton:hover{
+
+.circleButton:hover {
     transform: scale(1.3);
 }
-.cls-1{
-    opacity:0.4;
-    fill:#fff;
-    }
-.cls-2{
-    fill:#fff;
-    }
-button{
+
+.cls-1 {
+    opacity: 0.4;
+    fill: #fff;
+}
+
+.cls-2 {
+    fill: #fff;
+}
+
+button {
     border-radius: 50%;
 }
 
@@ -256,19 +282,19 @@ button{
 //         soundTrueOnEarHome
 // ********************************
 // ********************************
-.columnsWrapper{
-    height: 100vh;
-    // width: 100vw;
-    background-color: rgb(89,69,147);
-    display:flex;
+.columnsWrapper {
+    height: 100vh; // width: 100vw;
+    background-color: rgb(89, 69, 147);
+    display: flex;
 }
-.leftColumn{
+
+.leftColumn {
     height: 100%;
     width: 15vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    .navigationContainer{
+    .navigationContainer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -276,518 +302,500 @@ button{
         align-items: center;
     }
 }
-.centerColumnHome{
-    height: 100%;
-    width: 70vw;
-    display: flex;
-    align-items: center; 
-}
-    .headphones{
-        height: 600px;
-        width: 705px;
-        // transform: rotate(20deg);
-        display: flex;
-    }
-    .purpleHeadphone{
-        height: 100%;
-    }
-.centerColumn{
-    height: 100%;
-    width: 70vw;
-    display: flex;
-    .headphones{
-        height: 600px;
-        width: 705px;
-        // transform: rotate(20deg);
-        display: flex;
-    .purpleHeadphone{
-        height: 100%;
-    }
-    }
-    .description{
-    height: 200px;
-    display: flex;
-    color: white;
-    white-space: nowrap;
-    flex-direction:column;
-    .soundTrueOnEarTitle{
-        font-size: 300%;
-        // display: flex;
-    }
-    .soundTrueOnEarContent{
-        font-size: 100%;
-    }    
-}
 
-}
-.rightColumn{
+.centerColumnHome {
     height: 100%;
-    width: 15vw;
+    width: 70vw;
     display: flex;
     align-items: center;
+    overflow: hidden;
+}
+
+.headphones {
+    height: 850px;
+    width: 100%; 
+    display: flex;
     justify-content: center;
-    background-color: transparent;
-    .toggleContainer{
-        height:200px;
-        width:50px;
-        // background-color: black;
+}
+
+.purpleHeadphone {
+    height: 100%;
+}
+
+.centerColumn {
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    .headphones {
+        height: 600px;
+        width: 705px;
+        transform: rotate(20deg);
+        display: flex;
+        .purpleHeadphone {
+            height: 100%;
+        }
+    }
+}
+    .description {
+        height: 200px;
+        display: flex;
+        color: white;
+        white-space: nowrap;
+        flex-direction: column;
+        margin-left: -650px;
+        margin-top: 420px;
+    }
+    .soundTrueOnEarTitle {
+        font-size: 300%; // display: flex;
+    }
+    .soundTrueOnEarContent {
+        font-size: 100%;
+    }
+    .rightColumn {
+        height: 100%;
+        width: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        .toggleContainer {
+            height: 200px;
+            width: 50px; // background-color: black;
+            z-index: 10;
+        }
+    }
+    //***********************
+    //***********************
+    //***********************
+    //          MENU
+    //***********************
+    //***********************
+    //***********************
+    .iconStyle {
+        // height: 75px;
+        // width: 75px;
+        font-size: 50px;
+        color: white;
+        background-color: rgb(83, 66, 135);
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+        border: solid 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         z-index: 10;
     }
-}
-
-//***********************
-//***********************
-//***********************
-//          MENU
-//***********************
-//***********************
-//***********************
-.iconStyle{
-    // height: 75px;
-    // width: 75px;
-    font-size: 50px;
-    color: white;
-    background-color: rgb(83,66,135);
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    border: solid 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-.viewItem{
-    @extend .iconStyle;
-}
-.colors{
-    @extend .iconStyle;
-}
-.gallery{
-    @extend .iconStyle;
-}
-.dimensionsImg{
-    height: 75px;
-    width: 75px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 50%;
-}
-.buyNow{
-     @extend .iconStyle;
-}
-.home{
-     @extend .iconStyle;
-}
-.upButton{
-    font-size: 50px;
-}
-.downButton{
-    font-size: 50px;
-}
-//****************
-//****************
-//      inTune
-//****************
-//****************
-.inTuneHeadphones{
-    height:100%;
-    width:100vw;
-    overflow: hidden;
-    // margin-left: -400px;
-    // background-image: url("../../assets/images/soundTrueOnEar/inTuneHeadphonesWire.png");
-}
-.inTuneImage{
-    height: 100%;
-}
-.inTuneDescription{
-    height:100%;
-    color:white;
-    display: flex;
-    white-space: nowrap;
-    align-items: center;
-    justify-content: center;
-    // margin-left: 350px;
-    display: flex;
-    flex-direction: column;
-    // font-size: 150%;
-}
-.inTuneContent{
-    margin-bottom: 150px;
-}
-.inTuneTitle{
-    font-size: 300%;
-    margin-bottom: 10px;
-}
-//*****************
-//*****************
-//   powerfulSound
-//*****************
-//*****************
-.powerfulSoundHeadphones{
-    // background-image: url("../../assets/images/soundTrueOnEar/powerfulSoundHeadphones.png");
-    background-repeat: no-repeat;
-    height:100%;
-    width: 100%;
-    // margin-left: 600px;
-    overflow: hidden;
-}
-.powerfulSoundDescription{
-    color: white;
-    white-space: nowrap;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 220px;
-    margin-left: 100px;
-}
-.powerfulSoundTitle{
-    font-size: 300%;
-}
-
-//*****************
-//*****************
-//   colorPicker
-//*****************
-//*****************
-.colorPickerCenterColumn{
-    height: 100%;
-    width: 70vw;
-    display: flex;
-    margin: auto;
-}
-.colorSchemeContainer{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    height: 200px;
-    width: 450px;
-}
-.colorScheme{
- height: 25px;
- border: solid 2px;
- border-radius: 30px;
- color: white;
- padding: 10px; 
-}
-.headphoneColor{
-    height: 100%;
-    width: 494px;
-    // background-image: url('../../assets/images/soundTrueOnEar/colorPicker/Black.png');
-    background-repeat: no-repeat;
-    transition: background .5s ease;
-}
-.colorText{
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-    font-size: 55px;
-    padding-bottom: 10px;
-    white-space: nowrap;
-    width: 100%;
-    height: 100px;
-    margin-top: 310px;
-    margin-right: 50px;
-}
-//*****************
-//*****************
-//   gallery
-//*****************
-//*****************
-.galleryCenterColumn{
-    height: 100%;
-    width: 70vw;
-    display: flex;
-    margin: auto;
-}
-.galleryContainer{
-    height: 100vh;
-    width: 300px;
-    transform: skew(-25deg);
-    transition: width .5s;
-}
-.leftDiv:hover{
-    width: 500px;
-}
-.leftDiv{
-    @extend .galleryContainer;
-    background-image: url('../assets/images/soundTrueOnEar/gallery/videoStill.jpg');
-    // @extend .galleryDiv:hover;
-    margin-left: 100px;
-}
-.centerDiv{
-     @extend .galleryContainer;
-     background-image: url('../assets/images/soundTrueOnEar/gallery/whiteWithWheel.jpg');
-}
-.centerDiv:hover{
-    width: 500px;
-}
-.rightDiv{
-     @extend .galleryContainer;
-     background-image: url('../assets/images/soundTrueOnEar/gallery/purpleWithCase.jpg');
-}
-.rightDiv:hover{
-    width: 500px;
-}
-.galleryCircleButton{
-    z-index: 10;
-    width: 250px;
-    height: 300px;
-    position: absolute;
-    top: 360px;
-    left: 180px;
-    transition: all 0.3s;
-}
-.galleryCircleButton:hover{
-transform: scale(1.3);
-}
-.galleryCircleButtonRightDiv{
-    z-index: 10;
-    width: 250px;
-    height: 300px;
-    position: absolute;
-    top: 360px;
-    left: 80px;
-    transition: all 0.3s;
-}
-.galleryCircleButtonRightDiv:hover{
-    transform: scale(1.3);
-}
-.flickty-wrapper {
-    width: 100%;
-}
-// .flickity-slider {
-//   transform: none !important;
-// }
-
-// .galleryImage{
-//   left: 0 !important;
-//   opacity: 0;
-//   transition: opacity 0.3s ease-in-out;
-//   z-index: -1;
-// }
-
-// .galleryImage.is-selected {
-//   opacity: 1;
-//   z-index: 0
-// }
-
-
-
-//*****************
-//*****************
-//   gallery video player
-//*****************
-//*****************
-.bose-video-player {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-}
-
-//*****************
-//*****************
-//   dimensions
-//*****************
-//*****************
-.dimensionsCenterColumn{
-    height: 100%;
-    width: 70vw;
-    display: flex;
-    margin: auto;
-}
-.specsImage{
-    display:flex;
-    align-items: flex-end;
-}
-.specsDescription{
-    height:300px;
-    width:300px;
-    display:flex;
-    align-items: center;
-    margin: auto;
-}
-.specs{
-    color: white;
-    white-space: nowrap;
-}
-.carryingCaseImage{
-    height: 800px;
-    width: 900px;
-    margin: auto;
-}
-//*****************
-//*****************
-//   buyNow
-//*****************
-//*****************
-.centerColumnBuyNow{
-     height: 100%;
-    width: 70vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.availabilityContainer{
-    color: white;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
-}
-.buyNowContainer{
-    margin-bottom: 40px;
-    margin-left: 300px;
-}
-.availabilityButtons{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    /* margin: 0 auto; */
-    // flex-wrap: wrap;
-    height: 70px;
-}
-.colorSchemeBuyNow{
- height: 15px;
- border: solid 2px;
- border-radius: 30px;
- color: white;
- padding: 3px 10px; 
-}
-.buyNowTitle{
-    font-size: 350%;
-    margin-bottom: 10px;
-}
-.buyNowScheme{
-    height: 7px;
-}
-.stores{
-    height: 300px;
-    width: 500px;
-    display: flex;
-}
-.price{
-    margin-right: 105px;
-}
-.storesHolder{
-    height: 50px;
-    width: 500px;
-    display: flex;
-    justify-content: flex-end;
-}
-.headphoneContainerBuyNow{
-    display: flex;
-    justify-content: flex-end;
-}
-.headphoneBuyNow{
-    height: 100%;
-    width: 280px;
-    // background-image: url('../../assets/images/soundTrueOnEar/colorPicker/Black.png');
-    background-repeat: no-repeat;
-    transition: background .5s ease;
-    margin-bottom: 347px;
-    margin-left: 89px;
-}
-.buyNowWrapper{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-//*********************
-//*********************
-//      fade in
-//**********************
-//**********************
-.fade-in{
-  animation: animationFrames ease 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards; /*when the spec is finished*/
-  -webkit-animation: animationFrames ease 1s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
-  -moz-animation: animationFrames ease 1s;
-  -moz-animation-iteration-count: 1;
-  -moz-transform-origin: 50% 50%;
-  -moz-animation-fill-mode:forwards; /*FF 5+*/
-  -o-animation: animationFrames ease 1s;
-  -o-animation-iteration-count: 1;
-  -o-transform-origin: 50% 50%;
-  -o-animation-fill-mode:forwards; /*Not implemented yet*/
-  -ms-animation: animationFrames ease 1s;
-  -ms-animation-iteration-count: 1;
-  -ms-transform-origin: 50% 50%;
-  -ms-animation-fill-mode:forwards; /*IE 10+*/
-}
-
-@keyframes animationFrames{
-  0% {
-    opacity:0;
-    transform:  translate(0px,-25px)  ;
-  }
-  100% {
-    opacity:1;
-    transform:  translate(0px,0px)  ;
-  }
-}
-
-@-moz-keyframes animationFrames{
-  0% {
-    opacity:0;
-    -moz-transform:  translate(0px,-25px)  ;
-  }
-  100% {
-    opacity:1;
-    -moz-transform:  translate(0px,0px)  ;
-  }
-}
-
-@-webkit-keyframes animationFrames {
-  0% {
-    opacity:0;
-    -webkit-transform:  translate(0px,-25px)  ;
-  }
-  100% {
-    opacity:1;
-    -webkit-transform:  translate(0px,0px)  ;
-  }
-}
-
-@-o-keyframes animationFrames {
-  0% {
-    opacity:0;
-    -o-transform:  translate(0px,-25px)  ;
-  }
-  100% {
-    opacity:1;
-    -o-transform:  translate(0px,0px)  ;
-  }
-}
-
-@-ms-keyframes animationFrames {
-  0% {
-    opacity:0;
-    -ms-transform:  translate(0px,-25px)  ;
-  }
-  100% {
-    opacity:1;
-    -ms-transform:  translate(0px,0px)  ;
-  }
-}
-
-
-
-
-
+    .viewItem {
+        @extend .iconStyle;
+    }
+    .colors {
+        @extend .iconStyle;
+    }
+    .gallery {
+        @extend .iconStyle;
+    }
+    .dimensionsImg {
+        height: 75px;
+        width: 75px;
+        background-color: white;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .buyNow {
+        @extend .iconStyle;
+    }
+    .home {
+        @extend .iconStyle;
+    }
+    .upButton {
+        font-size: 50px;
+    }
+    .downButton {
+        font-size: 50px;
+    }
+    //****************
+    //****************
+    //      inTune
+    //****************
+    //****************
+    .inTuneHeadphones {
+        height: 100%;
+        width: 100vw;
+        overflow: hidden; // margin-left: -400px;
+        // background-image: url("../../assets/images/soundTrueOnEar/inTuneHeadphonesWire.png");
+    }
+    .inTuneImage {
+        height: 100%;
+    }
+    .inTuneDescription {
+        height: 100%;
+        color: white;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        justify-content: center; // margin-left: 350px;
+        display: flex;
+        flex-direction: column; // font-size: 150%;
+    }
+    .inTuneContent {
+        margin-bottom: 150px;
+    }
+    .inTuneTitle {
+        font-size: 300%;
+        margin-bottom: 10px;
+    }
+    //*****************
+    //*****************
+    //   powerfulSound
+    //*****************
+    //*****************
+    .powerfulSoundHeadphones {
+        // background-image: url("../../assets/images/soundTrueOnEar/powerfulSoundHeadphones.png");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%; // margin-left: 600px;
+        overflow: hidden;
+        background-color: transparent;
+    }
+    .powerfulSoundDescription {
+        color: white;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 220px;
+        margin-left: 100px;
+    }
+    .powerfulSoundTitle {
+        font-size: 300%;
+    }
+    //*****************
+    //*****************
+    //   colorPicker
+    //*****************
+    //*****************
+    .colorPickerCenterColumn {
+        height: 100%;
+        width: 70vw;
+        display: flex;
+        margin: auto;
+    }
+    .colorSchemeContainer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 450px;
+    }
+    .colorScheme {
+        height: 25px;
+        border: solid 2px;
+        border-radius: 30px;
+        color: white;
+        padding: 10px;
+    }
+    .headphoneColor {
+        height: 100%;
+        width: 494px; // background-image: url('../../assets/images/soundTrueOnEar/colorPicker/Black.png');
+        background-repeat: no-repeat;
+        transition: background .5s ease;
+    }
+    .colorText {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        font-size: 55px;
+        padding-bottom: 10px;
+        white-space: nowrap;
+        width: 100%;
+        height: 100px;
+        margin-top: 310px;
+        margin-right: 50px;
+    }
+    //*****************
+    //*****************
+    //   gallery
+    //*****************
+    //*****************
+    .galleryCenterColumn {
+        height: 100%;
+        width: 70vw;
+        display: flex;
+        margin: auto;
+    }
+    .galleryContainer {
+        height: 100vh;
+        width: 300px;
+        transform: skew(-25deg);
+        transition: width .5s;
+    }
+    .leftDiv:hover {
+        width: 500px;
+    }
+    .leftDiv {
+        @extend .galleryContainer;
+        background-image: url('../assets/images/soundTrueOnEar/gallery/videoStill.jpg'); // @extend .galleryDiv:hover;
+        margin-left: 100px;
+    }
+    .centerDiv {
+        @extend .galleryContainer;
+        background-image: url('../assets/images/soundTrueOnEar/gallery/whiteWithWheel.jpg');
+    }
+    .centerDiv:hover {
+        width: 500px;
+    }
+    .rightDiv {
+        @extend .galleryContainer;
+        background-image: url('../assets/images/soundTrueOnEar/gallery/purpleWithCase.jpg');
+    }
+    .rightDiv:hover {
+        width: 500px;
+    }
+    .galleryCircleButton {
+        z-index: 10;
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        top: 360px;
+        left: 180px;
+        transition: all 0.3s;
+    }
+    .galleryCircleButton:hover {
+        transform: scale(1.3);
+    }
+    .galleryCircleButtonRightDiv {
+        z-index: 10;
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        top: 360px;
+        left: 80px;
+        transition: all 0.3s;
+    }
+    .galleryCircleButtonRightDiv:hover {
+        transform: scale(1.3);
+    }
+    .flickty-wrapper {
+        width: 100%;
+    }
+    // .flickity-slider {
+    //   transform: none !important;
+    // }
+    // .galleryImage{
+    //   left: 0 !important;
+    //   opacity: 0;
+    //   transition: opacity 0.3s ease-in-out;
+    //   z-index: -1;
+    // }
+    // .galleryImage.is-selected {
+    //   opacity: 1;
+    //   z-index: 0
+    // }
+    //*****************
+    //*****************
+    //   gallery video player
+    //*****************
+    //*****************
+    .bose-video-player {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+    //*****************
+    //*****************
+    //   dimensions
+    //*****************
+    //*****************
+    .dimensionsCenterColumn {
+        height: 100%;
+        width: 70vw;
+        display: flex;
+        margin: auto;
+    }
+    .specsImage {
+        display: flex;
+        align-items: flex-end;
+    }
+    .specsDescription {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    .specs {
+        color: white;
+        white-space: nowrap;
+    }
+    .carryingCaseImage {
+        height: 800px;
+        width: 900px;
+        margin: auto;
+    }
+    //*****************
+    //*****************
+    //   buyNow
+    //*****************
+    //*****************
+    .centerColumnBuyNow {
+        height: 100%;
+        width: 70vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .availabilityContainer {
+        color: white;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 100%;
+    }
+    .buyNowContainer {
+        margin-bottom: 40px;
+        margin-left: 300px;
+    }
+    .availabilityButtons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        /* margin: 0 auto; */
+        // flex-wrap: wrap;
+        height: 70px;
+    }
+    .colorSchemeBuyNow {
+        height: 15px;
+        border: solid 2px;
+        border-radius: 30px;
+        color: white;
+        padding: 3px 10px;
+    }
+    .buyNowTitle {
+        font-size: 350%;
+        margin-bottom: 10px;
+    }
+    .buyNowScheme {
+        height: 7px;
+    }
+    .stores {
+        height: 300px;
+        width: 500px;
+        display: flex;
+    }
+    .price {
+        margin-right: 105px;
+    }
+    .storesHolder {
+        height: 50px;
+        width: 500px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .headphoneContainerBuyNow {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .headphoneBuyNow {
+        height: 100%;
+        width: 280px; // background-image: url('../../assets/images/soundTrueOnEar/colorPicker/Black.png');
+        background-repeat: no-repeat;
+        transition: background .5s ease;
+        margin-bottom: 347px;
+        margin-left: 89px;
+    }
+    .buyNowWrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    //*********************
+    //*********************
+    //      fade in
+    //**********************
+    //**********************
+    .fade-in {
+        animation: animationFrames ease 1s;
+        animation-iteration-count: 1;
+        transform-origin: 50% 50%;
+        animation-fill-mode: forwards;
+        /*when the spec is finished*/
+        -webkit-animation: animationFrames ease 1s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-fill-mode: forwards;
+        /*Chrome 16+, Safari 4+*/
+        -moz-animation: animationFrames ease 1s;
+        -moz-animation-iteration-count: 1;
+        -moz-transform-origin: 50% 50%;
+        -moz-animation-fill-mode: forwards;
+        /*FF 5+*/
+        -o-animation: animationFrames ease 1s;
+        -o-animation-iteration-count: 1;
+        -o-transform-origin: 50% 50%;
+        -o-animation-fill-mode: forwards;
+        /*Not implemented yet*/
+        -ms-animation: animationFrames ease 1s;
+        -ms-animation-iteration-count: 1;
+        -ms-transform-origin: 50% 50%;
+        -ms-animation-fill-mode: forwards;
+        /*IE 10+*/
+    }
+    @keyframes animationFrames {
+        0% {
+            opacity: 0;
+            transform: translate(0px, -25px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0px, 0px);
+        }
+    }
+    @-moz-keyframes animationFrames {
+        0% {
+            opacity: 0;
+            -moz-transform: translate(0px, -25px);
+        }
+        100% {
+            opacity: 1;
+            -moz-transform: translate(0px, 0px);
+        }
+    }
+    @-webkit-keyframes animationFrames {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate(0px, -25px);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate(0px, 0px);
+        }
+    }
+    @-o-keyframes animationFrames {
+        0% {
+            opacity: 0;
+            -o-transform: translate(0px, -25px);
+        }
+        100% {
+            opacity: 1;
+            -o-transform: translate(0px, 0px);
+        }
+    }
+    @-ms-keyframes animationFrames {
+        0% {
+            opacity: 0;
+            -ms-transform: translate(0px, -25px);
+        }
+        100% {
+            opacity: 1;
+            -ms-transform: translate(0px, 0px);
+        }
+    }

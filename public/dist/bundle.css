@@ -219,12 +219,14 @@ button {
   height: 100%;
   width: 70vw;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
 
 .headphones {
-  height: 600px;
-  width: 705px;
-  display: flex; }
+  height: 850px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
 
 .purpleHeadphone {
   height: 100%; }
@@ -236,19 +238,25 @@ button {
   .centerColumn .headphones {
     height: 600px;
     width: 705px;
+    transform: rotate(20deg);
     display: flex; }
     .centerColumn .headphones .purpleHeadphone {
       height: 100%; }
-  .centerColumn .description {
-    height: 200px;
-    display: flex;
-    color: white;
-    white-space: nowrap;
-    flex-direction: column; }
-    .centerColumn .description .soundTrueOnEarTitle {
-      font-size: 300%; }
-    .centerColumn .description .soundTrueOnEarContent {
-      font-size: 100%; }
+
+.description {
+  height: 200px;
+  display: flex;
+  color: white;
+  white-space: nowrap;
+  flex-direction: column;
+  margin-left: -650px;
+  margin-top: 420px; }
+
+.soundTrueOnEarTitle {
+  font-size: 300%; }
+
+.soundTrueOnEarContent {
+  font-size: 100%; }
 
 .rightColumn {
   height: 100%;
@@ -317,7 +325,8 @@ button {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: transparent; }
 
 .powerfulSoundDescription {
   color: white;
