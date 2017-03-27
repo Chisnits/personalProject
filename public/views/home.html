@@ -1,29 +1,27 @@
 <section class="buttonContainer">
 
 
-    <div class="soundTrueOnEarContainer" ng-mouseover="soundTrueOnEarDiv = !soundTrueOnEarDiv" ng-mouseleave="soundTrueOnEarDiv = !soundTrueOnEarDiv"
-        ng-init="soundTrueOnEarDiv = false">
+    <div class="soundTrueOnEarContainer">
         <!--<button ui-sref='soundTrueOnEar' class="soundTrueOnEarButton"></button>-->
         <a ui-sref='soundTrueOnEarHome'>
             <circle-button-directive color="'rgb(83,66,135)'" class="soundTrueOnEarCircleButton"></circle-button-directive>
         </a>
         <img class="soundTrueOnEarHeadphones antiSkew" src='../assets/images/soundTrueOnEar/headphones.png' style="width:100%" alt="">
-        <div ng-show="soundTrueOnEarDiv" class="soundTrueOnEarDescription antiSkew">
+        <div class="soundTrueOnEarDescription antiSkew">
             <p class="title">SoundTrue<br> on-ear headphones</p><br>
             <p class="content">Engineered for your ears.<br> Designed for the rest of you.</p>
         </div>
     </div>
 
 
-    <div class="soundLinkContainer" ng-mouseover="soundLinkButton = !soundLinkButton" ng-mouseleave="soundLinkButton = !soundLinkButton"
-        ng-init="soundLinkButton = false">
+    <div class="soundLinkContainer" >
         <img class="soundLinkHeadphones antiSkew" src='../assets/images/soundLinkOnEar/soundLinkOnEarHeadphones.png' style="width: 1100px;"
             alt="">
         <!--<button ng-show="soundLinkButton" ui-sref='soundLink' class="soundLinkButton" >+</button>-->
         <a ui-sref='soundLink'>
-            <circle-button-directive color="'#8ce'" ng-show="soundLinkButton" class="circleButton"> </circle-button-directive>
+            <circle-button-directive color="'#8ce'"  class="circleButton"> </circle-button-directive>
         </a>
-        <div ng-show="soundLinkButton" class="soundLinkDescription antiSkew">
+        <div class="soundLinkDescription antiSkew">
             <p class="title">SoundLink<br> on-ear bluetooth<br> headphones
                 <br></p>
             <p class="content">Caught up in the music, not the wires.</p>
@@ -32,15 +30,14 @@
 
 
 
-    <div class="quietComfortContainer" ng-mouseover="quietComfortDiv = !quietComfortDiv" ng-mouseleave="quietComfortDiv = !quietComfortDiv"
-        ng-init="quietComfortDiv = false">
+    <div class="quietComfortContainer">
         <img class="quietComfortHeadphones antiSkew" src='../assets/images/quietComfort/quietComfortHeadphones.png' style="width: 100%"
             alt="">
         <!--<button ui-sref='quietComfort' class="quietComfortButton">+</button>-->
         <a ui-sref='quietComfort'>
-            <circle-button-directive color="'#fc2'" ng-show="quietComfortDiv" class="circleButton"> </circle-button-directive>
+            <circle-button-directive color="'#fc2'" class="circleButton"> </circle-button-directive>
         </a>
-        <div ng-show="quietComfortDiv" class="quietComfortDescription antiSkew">
+        <div class="quietComfortDescription antiSkew">
             <p class="title">QuietComfort 25<br> acoustic noise cancelling<br> headphones </p> <br>
             <p class="content">Headphones on. World off.</p>
         </div>
@@ -77,3 +74,7 @@
 
 
 </section>
+
+<!--ng-mouseover="soundLinkButton = !soundLinkButton" ng-mouseleave="soundLinkButton = !soundLinkButton"
+        ng-init="soundLinkButton = false"-->
+        <!--ng-show="soundLinkButton"-->

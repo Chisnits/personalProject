@@ -40,6 +40,12 @@ li {
     justify-content: flex-end;
     z-index: 10;
 }
+.bosePosition{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
 .socialMediaContainer{
     display: flex;
     justify-content: flex-end;
@@ -113,7 +119,7 @@ li {
 }
 .soundLinkHeadphones{
     padding-bottom: 500px;
-    padding-right: 420px;
+    padding-right: 500px;
     transform:scale(10);
 }
 // .soundLinkButton{
@@ -268,33 +274,40 @@ button{
         justify-content: space-between;
         height: 480px;
         align-items: center;
-
     }
 }
+.centerColumnHome{
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    align-items: center; 
+}
+    .headphones{
+        height: 600px;
+        width: 705px;
+        // transform: rotate(20deg);
+        display: flex;
+    }
+    .purpleHeadphone{
+        height: 100%;
+    }
 .centerColumn{
     height: 100%;
     width: 70vw;
     display: flex;
     .headphones{
-        // background-image: url("../../assets/images/soundTrueOnEar/headphones.png");
-        // background-repeat: no-repeat;
-        // width:100%;
-        // height: 131vh;
-        // margin: auto auto;
-        height: 100%;
+        height: 600px;
         width: 705px;
-        transform: rotate(20deg);
+        // transform: rotate(20deg);
         display: flex;
     .purpleHeadphone{
         height: 100%;
     }
     }
     .description{
+    height: 200px;
     display: flex;
     color: white;
-    // margin-top: 955px;
-    // margin-left: 115px;
-    transform: rotate(-20deg);
     white-space: nowrap;
     flex-direction:column;
     .soundTrueOnEarTitle{
@@ -381,8 +394,12 @@ button{
 .inTuneHeadphones{
     height:100%;
     width:100vw;
-    margin-left: -400px;
-    background-image: url("../../assets/images/soundTrueOnEar/inTuneHeadphonesWire.png");
+    overflow: hidden;
+    // margin-left: -400px;
+    // background-image: url("../../assets/images/soundTrueOnEar/inTuneHeadphonesWire.png");
+}
+.inTuneImage{
+    height: 100%;
 }
 .inTuneDescription{
     height:100%;
@@ -391,13 +408,13 @@ button{
     white-space: nowrap;
     align-items: center;
     justify-content: center;
-    margin-left: 350px;
+    // margin-left: 350px;
     display: flex;
     flex-direction: column;
     // font-size: 150%;
-    .inTunetitle{
-        font-size: 150%;
-    }
+}
+.inTuneContent{
+    margin-bottom: 150px;
 }
 .inTuneTitle{
     font-size: 300%;
@@ -409,11 +426,12 @@ button{
 //*****************
 //*****************
 .powerfulSoundHeadphones{
-    background-image: url("../../assets/images/soundTrueOnEar/powerfulSoundHeadphones.png");
+    // background-image: url("../../assets/images/soundTrueOnEar/powerfulSoundHeadphones.png");
     background-repeat: no-repeat;
     height:100%;
     width: 100%;
-    margin-left: 600px;
+    // margin-left: 600px;
+    overflow: hidden;
 }
 .powerfulSoundDescription{
     color: white;
@@ -474,6 +492,7 @@ button{
     width: 100%;
     height: 100px;
     margin-top: 310px;
+    margin-right: 50px;
 }
 //*****************
 //*****************
@@ -499,7 +518,7 @@ button{
     @extend .galleryContainer;
     background-image: url('../assets/images/soundTrueOnEar/gallery/videoStill.jpg');
     // @extend .galleryDiv:hover;
-
+    margin-left: 100px;
 }
 .centerDiv{
      @extend .galleryContainer;
@@ -524,6 +543,9 @@ button{
     left: 180px;
     transition: all 0.3s;
 }
+.galleryCircleButton:hover{
+transform: scale(1.3);
+}
 .galleryCircleButtonRightDiv{
     z-index: 10;
     width: 250px;
@@ -532,7 +554,9 @@ button{
     top: 360px;
     left: 80px;
     transition: all 0.3s;
-
+}
+.galleryCircleButtonRightDiv:hover{
+    transform: scale(1.3);
 }
 .flickty-wrapper {
     width: 100%;
@@ -763,18 +787,6 @@ button{
   }
 }
 
-
-
-
-
-
-// $(document).ready(function(){
-//   $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-
-//   $(window).resize(function(){
-//     $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-//   });
-// });
 
 
 
