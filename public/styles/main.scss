@@ -2,7 +2,7 @@
     font-family: 'cool-font';
     src: url('../assets/fonts/museoSans/MuseoSansRounded-100.ttf');
 }
-p{
+p span{
     font-family: 'cool-font';
 }
 a{ 
@@ -11,6 +11,10 @@ a{
 li {
     list-style-type: none;
 }
+.tm{
+        font-size: 15%;
+    }
+
 .title{
     font-size: 35px;
 }
@@ -254,7 +258,7 @@ button{
 }
 .leftColumn{
     height: 100%;
-    width: 15%;
+    width: 15vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -262,14 +266,14 @@ button{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 397px;
+        height: 480px;
         align-items: center;
 
     }
 }
 .centerColumn{
     height: 100%;
-    width: 70%;
+    width: 70vw;
     display: flex;
     .headphones{
         // background-image: url("../../assets/images/soundTrueOnEar/headphones.png");
@@ -278,7 +282,7 @@ button{
         // height: 131vh;
         // margin: auto auto;
         height: 100%;
-        width: 100%;
+        width: 705px;
         transform: rotate(20deg);
         display: flex;
     .purpleHeadphone{
@@ -297,18 +301,15 @@ button{
         font-size: 300%;
         // display: flex;
     }
-    .tm{
-        font-size: 15%;
-        // padding-bottom: 10px;
-    }
     .soundTrueOnEarContent{
         font-size: 100%;
     }    
 }
+
 }
 .rightColumn{
     height: 100%;
-    width: 15%;
+    width: 15vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,6 +318,7 @@ button{
         height:200px;
         width:50px;
         // background-color: black;
+        z-index: 10;
     }
 }
 
@@ -334,8 +336,15 @@ button{
     color: white;
     background-color: rgb(83,66,135);
     border-radius: 50%;
+    height: 75px;
+    width: 75px;
     border: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
+
 .viewItem{
     @extend .iconStyle;
 }
@@ -346,7 +355,8 @@ button{
     @extend .iconStyle;
 }
 .dimensionsImg{
-    height: 50px;
+    height: 75px;
+    width: 75px;
     background-color: white;
     padding: 5px;
     border-radius: 50%;
@@ -389,6 +399,10 @@ button{
         font-size: 150%;
     }
 }
+.inTuneTitle{
+    font-size: 300%;
+    margin-bottom: 10px;
+}
 //*****************
 //*****************
 //   powerfulSound
@@ -411,14 +425,21 @@ button{
     margin-bottom: 220px;
     margin-left: 100px;
 }
-.powerfulSoundtitle{
-    font-size: 100%;
+.powerfulSoundTitle{
+    font-size: 300%;
 }
+
 //*****************
 //*****************
 //   colorPicker
 //*****************
 //*****************
+.colorPickerCenterColumn{
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    margin: auto;
+}
 .colorSchemeContainer{
     display: flex;
     justify-content: flex-end;
@@ -459,6 +480,12 @@ button{
 //   gallery
 //*****************
 //*****************
+.galleryCenterColumn{
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    margin: auto;
+}
 .galleryContainer{
     height: 100vh;
     width: 300px;
@@ -497,6 +524,16 @@ button{
     left: 180px;
     transition: all 0.3s;
 }
+.galleryCircleButtonRightDiv{
+    z-index: 10;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 360px;
+    left: 80px;
+    transition: all 0.3s;
+
+}
 .flickty-wrapper {
     width: 100%;
 }
@@ -534,6 +571,12 @@ button{
 //   dimensions
 //*****************
 //*****************
+.dimensionsCenterColumn{
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    margin: auto;
+}
 .specsImage{
     display:flex;
     align-items: flex-end;
@@ -561,7 +604,7 @@ button{
 //*****************
 .centerColumnBuyNow{
      height: 100%;
-    width: 70%;
+    width: 70vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -573,7 +616,7 @@ button{
     align-items: center;
     justify-content: center;
     height: 500px;
-    width: 680px;
+    width: 100%;
 }
 .buyNowContainer{
     margin-bottom: 40px;

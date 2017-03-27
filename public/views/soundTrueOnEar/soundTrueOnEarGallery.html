@@ -3,7 +3,7 @@
         <left-side-menu-directive></left-side-menu-directive>
     </section>
 <div class="wrapper fade-in">
-    <section class="centerColumn">
+    <section class="galleryCenterColumn">
             <div class="leftDiv"> 
                 <a ui-sref='soundTrueOnEarGalleryVideo'>
                     <circle-button-directive color="'rgb(83,66,135)'" class="galleryCircleButton"></circle-button-directive>
@@ -14,14 +14,14 @@
                 <circle-button-directive color="'rgb(83,66,135)'" class="galleryCircleButton"></circle-button-directive>
                 </a>
             </div>
-            <div class="rightDiv">
-            <a ui-sref='soundTrueOnEarGalleryRight'>
-                <circle-button-directive color="'rgb(83,66,135)'" class="galleryCircleButton"></circle-button-directive>
-            </a>
+              <div class="rightDiv">
+                <a ui-sref='soundTrueOnEarGalleryRight'>
+                <circle-button-directive color="'rgb(83,66,135)'" class="galleryCircleButtonRightDiv"></circle-button-directive>
+                </a>
             </div>
     </section>
 </div>
     <section class="rightColumn">
-        <right-side-menu-directive></right-side-menu-directive>
+        <right-side-menu-directive uplink="soundTrueOnEarColors" downlink="soundTrueOnEarDimensions"></right-side-menu-directive>
     </section>
 </div>

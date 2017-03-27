@@ -166,7 +166,25 @@ angular.module('bose').directive('leftSideMenuDirective', function () {
 angular.module('bose').directive('rightSideMenuDirective', function () {
     return {
         restrict: 'AE',
-        templateUrl: './views/directives/rightSideMenu.html'
+        scope: {
+            uplink: '@',
+            downlink: '@'
+        },
+        templateUrl: './views/directives/rightSideMenu.html',
+        controller: function controller($scope, $state) {
+            // console.log($scope.link);
+            $scope.upArrow = function () {
+                var url = '' + $scope.uplink + '';
+                // console.log(url);
+                $state.go(url);
+            };
+
+            $scope.downArrow = function () {
+                var url = '' + $scope.downlink + '';
+                // console.log(url);
+                $state.go(url);
+            };
+        }
     };
 });
 'use strict';
