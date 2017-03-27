@@ -4,6 +4,6 @@ angular.module('bose').controller('headphonesCtrl',function($scope, mainService)
 
         mainService.getData().then(function(headphones){
             $scope.headphones = headphones;
-            console.log('we made it')
+            console.log(headphones)
         })
     })

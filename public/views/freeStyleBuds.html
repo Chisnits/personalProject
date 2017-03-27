@@ -1,6 +1,5 @@
-
-            <div ng-repeat="headphone in headphones">
+            <div ng-repeat="data in headphones">
 					<ul>
-						<li>{{headphones.photo}}</li>
+						<li ng-repeat="headphone in data"><img ng-src="{{headphone.photo}}" alt=""> {{headphone.id}}</li>
 					</ul>
             </div>

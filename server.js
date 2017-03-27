@@ -20,6 +20,7 @@ var db = massive.connectSync({
 app.set('db', db);
 
 db.bose_schema((err, data) => {
+  console.log(data)
     if (err) console.log(err);
     else console.log('All tables successfully reset boom!');
 })

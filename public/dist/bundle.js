@@ -102,7 +102,7 @@ angular.module('bose').controller('headphonesCtrl', function ($scope, mainServic
 
     mainService.getData().then(function (headphones) {
         $scope.headphones = headphones;
-        console.log('we made it');
+        console.log(headphones);
     });
 });
 'use strict';
@@ -174,16 +174,22 @@ angular.module('bose').directive('rightSideMenuDirective', function () {
 angular.module('bose').service('mainService', function ($http) {
     // this.test1 = 'service works'
     var baseUrl = "/images/headphones";
-    this.getData = function (headphones) {
-        return $http({
-            method: 'GET',
-            url: baseUrl
-        }).then(function (response) {
-            console.log(response.data.results);
-            if (response.status === 200) {
-                return response.data.results;
-            }
-            return "Something Went Wrong";
+    // this.getData = function(){
+    //     return $http({
+    //         method: 'GET',
+    //         url: baseUrl
+    // }).then(function(response){
+    //     console.log(response)
+    //     if(response.status === 200){
+    //         return response.data.resultss
+    //     }
+    //         return "Something Went Wrong"
+    //     })
+    // }
+    this.getData = function () {
+        return $http.get("/images/headphones/").then(function (resp) {
+            console.log(resp.data);
+            return resp;
         });
     };
 });
