@@ -1,22 +1,14 @@
-CREATE TABLE headphone_picture ( 
-    headphoneID int NOT NULL AUTO_INCREMENT,
-    headphoneName varchar(200)
-    headphoneRoute varchar(200)
-    PRIMARY KEY (headphoneID)
-);
-INSERT INTO headphone_picture(headphoneName,headphoneID)
-VALUES () 
-
+DROP TABLE IF EXISTS headphones, pictures;
 
 /*~~~~~~~~~~~~~~~~~~~*
 Headphone Type Table
 *~~~~~~~~~~~~~~~~~~~~*/
-CREATE TABLE headphone (
+CREATE TABLE headphones (
     id SERIAL PRIMARY KEY,
-    headphonetype VARCHAR(255)
+    type VARCHAR(255)
 );
 
-INSERT INTO headphone (headphonetype) VALUES
+INSERT INTO headphones (type) VALUES
 ('sound true on ear'),
 ('sound link on ear'),
 ('quietcomfort'),
@@ -26,15 +18,15 @@ INSERT INTO headphone (headphonetype) VALUES
 Headphone Route Table
 *~~~~~~~~~~~~~~~~~~~~*/
 
-CREATE TABLE shirts (
+CREATE TABLE pictures (
     id SERIAL PRIMARY KEY,
-    view VARCHAR(255)
+    view VARCHAR(255),
     name VARCHAR(255),
     photo VARCHAR(255),
-    headphoneid INTEGER REFERENCES headphone(id)
+    headphoneid INTEGER REFERENCES headphones(id)
 );
 
-INSERT INTO shirts (view ,name, photo, headphoneid) VALUES
+INSERT INTO pictures (view, name, photo, headphoneid) VALUES
 ('Root', 'Purple Headphones', '../assets/images/soundTrueOnEar/headphones.png', 1),
 ('Root', 'Sound Link On Ear White', '../assets/images/soundLinkOnEar/soundLinkOnEarHeadphones.png', 2),
 ('Root', 'Quiet Comfort Black', '../assets/images/quietComfort/quietComfortHeadphones.png', 3),
@@ -68,7 +60,7 @@ INSERT INTO shirts (view ,name, photo, headphoneid) VALUES
 ('Carousel_2', 'All Headphone Colors','../../../assets/images/soundTrueOnEar/gallery/allColors.jpg', 1),
 ('Dimensions', 'Purple Headphones Dimensions','../assets/images/soundTrueOnEar/dimensionsHeadphones.png', 1),
 ('Dimensions', 'Checkmarks','../assets/images/tick-small.png', 1),
-('Dimensions', 'White Headphones In Case','../assets/images/soundTrueOnEar/carryingCase.png', 1),
+('Dimensions', 'White Headphones In Case','../assets/images/soundTrueOnEar/carryingCase.png', 1);
 
 
 

@@ -20,6 +20,7 @@ angular.module('bose', ['ui.router','bc.Flickity']).config(function ($stateProvi
         .state('freeStyleBuds', {
             url: '/freeStyleBuds',
             templateUrl: 'views/freeStyleBuds.html',
+            controller:'headphonesCtrl'
         })
         .state('soundTrueAroundEar', {
             url: '/soundTrueAroundEar',

@@ -13,29 +13,30 @@ app.use(express.static('./public'));
 
 const config = require('./config.js');
 
-var db = massive.connectSync({connectionString : config.elephantSql});
-
+var db = massive.connectSync({
+  connectionString : config.elephantSql
+});
+ 
 app.set('db', db);
 
-
-db.set_schema((err, data) => {
+db.bose_schema((err, data) => {
     if (err) console.log(err);
     else console.log('All tables successfully reset boom!');
 })
+ 
 
-
-
-// Sunglasses
-app.get('/api/products', function(req, res, next) {
-  db.get_sunglasses(function(err, sunglasses) {
+app.get('/images/headphones', function(req, res, next) {
+  db.get_headphones(function(err, headphones) {
     if (err) {
       res.status(500).json(err);
     } else {
-      res.json(sunglasses)
-      console.log(sunglasses)
+      res.json(headphones)
     }
   });
 })
+
+
+
 
 
 

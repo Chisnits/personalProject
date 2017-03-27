@@ -16,7 +16,8 @@ angular.module('bose', ['ui.router', 'bc.Flickity']).config(function ($stateProv
         templateUrl: 'views/quietComfort.html'
     }).state('freeStyleBuds', {
         url: '/freeStyleBuds',
-        templateUrl: 'views/freeStyleBuds.html'
+        templateUrl: 'views/freeStyleBuds.html',
+        controller: 'headphonesCtrl'
     }).state('soundTrueAroundEar', {
         url: '/soundTrueAroundEar',
         templateUrl: 'views/soundTrueAroundEar.html'
@@ -95,6 +96,17 @@ angular.module('bose').controller('galleryCtrl', function ($scope) {
 });
 'use strict';
 
+angular.module('bose').controller('headphonesCtrl', function ($scope, mainService) {
+    // $scope.test = 'controller works';
+    // $scope.test1 = mainService.test1;
+
+    mainService.getData().then(function (headphones) {
+        $scope.headphones = headphones;
+        console.log('we made it');
+    });
+});
+'use strict';
+
 angular.module('bose').controller('mainCtrl', function ($scope) {});
 'use strict';
 
@@ -155,5 +167,23 @@ angular.module('bose').directive('rightSideMenuDirective', function () {
     return {
         restrict: 'AE',
         templateUrl: './views/directives/rightSideMenu.html'
+    };
+});
+'use strict';
+
+angular.module('bose').service('mainService', function ($http) {
+    // this.test1 = 'service works'
+    var baseUrl = "/images/headphones";
+    this.getData = function (headphones) {
+        return $http({
+            method: 'GET',
+            url: baseUrl
+        }).then(function (response) {
+            console.log(response.data.results);
+            if (response.status === 200) {
+                return response.data.results;
+            }
+            return "Something Went Wrong";
+        });
     };
 });
